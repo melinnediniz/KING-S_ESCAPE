@@ -11,14 +11,14 @@ public class Stalker : MonoBehaviour
     public int health;
     public int currentHealth;
 
-    private Rigidbody2D rb2D;
-    private Animator anim;
+    private Rigidbody2D _rb2D;
+    private Animator _anim;
 
 
     void Start()
     {
-        rb2D = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        _rb2D = GetComponent<Rigidbody2D>();
+        _anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -29,7 +29,7 @@ public class Stalker : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        anim.SetTrigger("hit");
+        _anim.SetTrigger("hit");
         if (currentHealth <= 0)
         {
             Die();
@@ -38,7 +38,7 @@ public class Stalker : MonoBehaviour
 
     void Die()
     {
-        anim.SetBool("die", true);
+        _anim.SetBool("die", true);
         Destroy(gameObject, 1f);
     }
 
@@ -48,12 +48,12 @@ public class Stalker : MonoBehaviour
         if(distPlayer < agroRange)
         {
             ChasePlayer();
-            anim.SetBool("isChasing", true);
+            _anim.SetBool("isChasing", true);
         }
         else
         {
             StopChasing();
-            anim.SetBool("isChasing", false);
+            _anim.SetBool("isChasing", false);
         }
     }
 
@@ -61,21 +61,21 @@ public class Stalker : MonoBehaviour
     {
         if(transform.position.x < target.position.x) // esta na esquerda
         {
-            rb2D.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-            rb2D.velocity = new Vector2(speed, 0);
+            _rb2D.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            _rb2D.velocity = new Vector2(speed, 0);
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
 
         }
         else
         {
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
-            rb2D.velocity = new Vector2(-speed, 0);
+            _rb2D.velocity = new Vector2(-speed, 0);
         }
         
     }
 
     void StopChasing()
     {
-        rb2D.velocity = new Vector2(0, 0);
+        _rb2D.velocity = new Vector2(0, 0);
     }
 }

@@ -4,77 +4,78 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private Rigidbody2D rig;
+    private Rigidbody2D _rig;
 
-    public float speed;
-    public float jumpForce;
-    private bool isJumping;
-    private Animator anim;
+    [SerializeField] private float speed;
+    [SerializeField] private float jumpForce;
+    private bool _isJumping;
+    
+    private Animator _anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        rig = GetComponent<Rigidbody2D>();   
-        anim = GetComponent<Animator>(); 
+        _rig = GetComponent<Rigidbody2D>();   
+        _anim = GetComponent<Animator>(); 
     }
 
     // Update is called once per frame
     void Update()
     {
-        move();
-        jump();
+        Move();
+        Jump();
     }
 
-    void move()
+    void Move()
     {
         float movement = Input.GetAxis("Horizontal");
 
-        rig.velocity = new Vector2(movement * speed, rig.velocity.y);
+        _rig.velocity = new Vector2(movement * speed, _rig.velocity.y);
     
         if(movement > 0f)
         {
             transform.eulerAngles = new Vector3 (0f,0f,0f);
-            anim.SetBool("run", true);
+            _anim.SetBool("run", true);
         }
 
         if(movement < 0f)
         {
             transform.eulerAngles = new Vector3 (0f,180f,0f);
-            anim.SetBool("run", true);
+            _anim.SetBool("run", true);
         }
 
         if(movement == 0f)
         {
-            anim.SetBool("run", false);
+            _anim.SetBool("run", false);
         }
     }
 
-    void jump()
+    void Jump()
     {
         if(Input.GetButtonDown("Jump"))
         {
-            if (!isJumping)
+            if (!_isJumping)
             {
-                rig.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-                anim.SetBool("jump", true);
+                _rig.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+                _anim.SetBool("jump", true);
             }
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            isJumping = false;
-            anim.SetBool("jump", false);
+            _isJumping = false;
+            _anim.SetBool("jump", false);
         }
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            isJumping = true;
+            _isJumping = true;
         }
     }
 }
