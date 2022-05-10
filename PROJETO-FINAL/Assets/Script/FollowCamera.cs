@@ -1,18 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class FollowCamera : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private float speed;
+
+    [SerializeField] private float yOffset;
+    public Transform player;
+
+    private void Update()
     {
-        
+        FollowPlayer();
     }
 
-    // Update is called once per frame
-    void Update()
+    void FollowPlayer()
     {
-        
+        if (player)
+        {
+            Vector3 position = player.position;
+            Vector3 playerPos = new Vector3(position.x, position.y + yOffset, -10f);
+            transform.position = Vector3.Slerp(transform.position, playerPos, speed * Time.deltaTime);
+        }
     }
 }
