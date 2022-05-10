@@ -9,11 +9,13 @@ public class Player : MonoBehaviour
     public float speed;
     public float jumpForce;
     private bool isJumping;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        rig = GetComponent<Rigidbody2D>();    
+        rig = GetComponent<Rigidbody2D>();   
+        anim = GetComponent<Animator>(); 
     }
 
     // Update is called once per frame
@@ -32,16 +34,18 @@ public class Player : MonoBehaviour
         if(movement > 0f)
         {
             transform.eulerAngles = new Vector3 (0f,0f,0f);
+            anim.SetBool("run", true);
         }
 
         if(movement < 0f)
         {
             transform.eulerAngles = new Vector3 (0f,180f,0f);
+            anim.SetBool("run", true);
         }
 
         if(movement == 0f)
         {
-
+            anim.SetBool("run", false);
         }
     }
 
@@ -52,6 +56,7 @@ public class Player : MonoBehaviour
             if (!isJumping)
             {
                 rig.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+                anim.SetBool("jump", true);
             }
         }
     }
@@ -61,6 +66,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             isJumping = false;
+            anim.SetBool("jump", false);
         }
     }
 
