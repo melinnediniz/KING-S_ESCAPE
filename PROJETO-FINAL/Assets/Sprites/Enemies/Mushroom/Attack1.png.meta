@@ -119,9 +119,9 @@ TextureImporter:
       name: Attack1_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 48
-        width: 54
+        x: 64
+        y: 49
+        width: 23
         height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -140,9 +140,9 @@ TextureImporter:
       name: Attack1_1
       rect:
         serializedVersion: 2
-        x: 198
+        x: 211
         y: 49
-        width: 54
+        width: 23
         height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -161,9 +161,9 @@ TextureImporter:
       name: Attack1_2
       rect:
         serializedVersion: 2
-        x: 342
+        x: 351
         y: 49
-        width: 54
+        width: 29
         height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -182,9 +182,9 @@ TextureImporter:
       name: Attack1_3
       rect:
         serializedVersion: 2
-        x: 492
-        y: 48
-        width: 54
+        x: 501
+        y: 49
+        width: 29
         height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -203,9 +203,9 @@ TextureImporter:
       name: Attack1_4
       rect:
         serializedVersion: 2
-        x: 643
-        y: 48
-        width: 54
+        x: 651
+        y: 49
+        width: 29
         height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -224,9 +224,9 @@ TextureImporter:
       name: Attack1_5
       rect:
         serializedVersion: 2
-        x: 796
+        x: 805
         y: 49
-        width: 54
+        width: 25
         height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -245,9 +245,9 @@ TextureImporter:
       name: Attack1_6
       rect:
         serializedVersion: 2
-        x: 954
+        x: 956
         y: 49
-        width: 54
+        width: 50
         height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -266,9 +266,9 @@ TextureImporter:
       name: Attack1_7
       rect:
         serializedVersion: 2
-        x: 1111
-        y: 48
-        width: 54
+        x: 1114
+        y: 49
+        width: 34
         height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -279,6 +279,90 @@ TextureImporter:
       bones: []
       spriteID: 7761ccf3fb2e5f24ca18ec04c58a8972
       internalID: -594881228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack1_8
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 75
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93cc34cfe0462043aec9cf9ad14b6cf
+      internalID: -1103044807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack1_9
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 68
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f97db268baa4c34d95eaf0ef2bd7830
+      internalID: -1930906510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack1_10
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 49
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4695e21f880d6143a4d9d23d964959e
+      internalID: -1823380875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack1_11
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 56
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c620faaeb5e82341a520826e4d19245
+      internalID: -1866489420
       vertices: []
       indices: 
       edges: []
