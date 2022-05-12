@@ -6,7 +6,9 @@ public class Player : MonoBehaviour
 {
     public float Speed;  //velocidade
     public float JumpForce;  //força do pulo
-    public bool IsJumping;  //pulando sim/não
+    public bool OnGround;  //player encostando no chão
+    public Transform GroundDetect;  //verifica o chão
+    public LayerMask IsGround;  //verifica o que é chão
     public static Player instance;
 
     private Rigidbody2D Rig;  //colisor
@@ -47,24 +49,16 @@ public class Player : MonoBehaviour
     }//end
 
     void Jump(){  //método Pular
-        if(Input.GetButtonDown("Jump") && !IsJumping){  //se botão de pulo acionado e player não pulando
+        OnGround = Physics2D.OverlapCircle(GroundDetect.position, 0.1f, IsGround);  //variável recebe true/falso para detectar chão
+        if(Input.GetButtonDown("Jump") && OnGround == true){  //se botão de pulo acionado e player não pulando
             Rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);  //adiciona força/impulso na direção Cima
             Anim.SetBool("jump", true);
         }
     }//end
 
-    void OnCollisionEnter2D(Collision2D collision){  //detecta colisões com o player
-        if(collision.gameObject.layer == 6){ //quando colide com layer 6:Ground
-            IsJumping = false;
-            Anim.SetBool("jump", false);
-        }
-    }//end
-
-    void OnCollisionExit2D(Collision2D collision){  //quando player para de colidir
-        if(collision.gameObject.layer == 6){ //layer 6:Ground
-            IsJumping = true;
-        }
-    }//end
+    private void OnCollisionEnter2D(Collision2D collision) {
+        Anim.SetBool("jump", false);
+    }
 
     public void DoorIn(){
         Anim.SetTrigger("door_in");
