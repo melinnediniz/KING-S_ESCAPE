@@ -21,8 +21,12 @@ public class DoorOpen : MonoBehaviour
             boxCol.enabled = false;  //desativa o colisor 
             anim.SetTrigger("open");
             Player.instance.DoorIn();
-            SceneManager.LoadScene(lvlname);  //carrega a cenas
+            Invoke("ChangeScene", 1f);
         }
+    }
+
+    void ChangeScene(){
+        SceneManager.LoadScene(lvlname);  //carrega a cenas
     }
 
 }
