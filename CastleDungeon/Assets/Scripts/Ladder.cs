@@ -8,6 +8,7 @@ public class Ladder : MonoBehaviour
 
     [SerializeField] private float speed;
     private float _vertical;
+    [SerializeField] private Animator animPlayer;
 
     [SerializeField]
     private bool  isUnder;
@@ -43,6 +44,7 @@ public class Ladder : MonoBehaviour
     {
         if (isClimbing)
         {
+            
             rb2DPlayer.gravityScale = 0f;
             rb2DPlayer.velocity = new Vector2(rb2DPlayer.velocity.x, _vertical * speed);
         }
@@ -65,6 +67,7 @@ public class Ladder : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             isUnder = true;
+            animPlayer.SetBool("climbing", true);
         }
         
         
@@ -76,6 +79,7 @@ public class Ladder : MonoBehaviour
         {
             isUnder = false;
             isClimbing = false;
+            animPlayer.SetBool("climbing", false);
         }
     }
 }
