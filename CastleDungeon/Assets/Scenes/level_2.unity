@@ -9725,6 +9725,10 @@ PrefabInstance:
       value: Ladder
       objectReference: {fileID: 0}
     - target: {fileID: 4969627284490750411, guid: ec0c42da288876b49b7db1c73a893c4e, type: 3}
+      propertyPath: animPlayer
+      value: 
+      objectReference: {fileID: 1241098167}
+    - target: {fileID: 4969627284490750411, guid: ec0c42da288876b49b7db1c73a893c4e, type: 3}
       propertyPath: playerAnim
       value: 
       objectReference: {fileID: 1241098167}
