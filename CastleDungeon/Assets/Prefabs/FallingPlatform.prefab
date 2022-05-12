@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4571984760020176520}
   - component: {fileID: 4571984760020176523}
   - component: {fileID: 4571984760020176522}
+  - component: {fileID: 2503149640334085606}
   m_Layer: 0
   m_Name: FallingPlatform
   m_TagString: Untagged
@@ -126,7 +127,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.28, y: 0.22}
+    oldSize: {x: 0.875, y: 0.6875}
     newSize: {x: 0.28, y: 0.22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -149,7 +150,7 @@ TargetJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_Anchor: {x: 0, y: 0}
-  m_Target: {x: -3.96, y: -6.72}
+  m_Target: {x: -3.67, y: -7.29}
   m_AutoConfigureTarget: 1
   m_MaxForce: 10000
   m_DampingRatio: 1
@@ -167,3 +168,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingTime: 1
+--- !u!95 &2503149640334085606
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4571984760020176533}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
