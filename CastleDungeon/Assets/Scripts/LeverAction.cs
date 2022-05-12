@@ -7,30 +7,38 @@ public class LeverAction : MonoBehaviour
 {
     [SerializeField] private Animator anim;
     [SerializeField] private BoxCollider2D target;
+    [SerializeField] private Transform targetTransform;
+    [SerializeField] private float angle;
     void Start()
     {
         anim = GetComponent<Animator>();
     }
     
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (target != null)
         {
-            if (col.CompareTag("Player") && !target.isTrigger)
+            if (col.CompareTag("Player") && target.enabled)
             {
                 anim.SetTrigger("activated");
-                target.isTrigger = true;
+                RotateTarget();
+                target.enabled = false;
+                
             }
-            else if (target.isTrigger)
+            else if (!target.enabled)
             {
                 anim.SetTrigger("activated");
-                target.isTrigger = true;
+                target.enabled = true;
             }
+        }
+    }
+
+    void RotateTarget()
+    {
+        if (targetTransform.rotation.z == 0)
+        {
+            targetTransform.Rotate(Vector3.forward, angle);
         }
     }
 }
