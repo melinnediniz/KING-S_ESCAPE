@@ -32,6 +32,15 @@ public class Ladder : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (rb2DPlayer)
+        {
+            Climb();
+        }
+           
+    }
+
+    private void Climb()
+    {
         if (isClimbing)
         {
             rb2DPlayer.gravityScale = 0f;
