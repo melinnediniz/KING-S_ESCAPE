@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2b667e481e737b04f94830165fde2275
+guid: db90d32a6baf17c418a63dff413319dd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dead Hit 02_0
+      name: Idle 05_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 2
-        width: 22
-        height: 30
+        x: 17
+        y: 3
+        width: 40
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eff1900eecd85db4cbd1cb7b41b4f5ca
-      internalID: -1570329040
+      spriteID: 4148012dd58cdd14599473b47ad63e0e
+      internalID: 974197495
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dead Hit 02_0: -1570329040
+      Idle 05_0: 974197495
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

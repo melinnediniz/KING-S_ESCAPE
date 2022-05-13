@@ -31,7 +31,8 @@ public class Stalker : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        // animation hit
+        anim.SetTrigger("hit");
+
         if (currentHealth <= 0)
         {
             Die();
@@ -40,7 +41,8 @@ public class Stalker : MonoBehaviour
 
     void Die()
     {
-        // animation die
+        StopChasing();
+        anim.SetBool("dead", true);
         Destroy(gameObject, 1f);
     }
 
@@ -48,15 +50,18 @@ public class Stalker : MonoBehaviour
     {
         float distToPlayer = Vector2.Distance(transform.position, player.position);
 
-        if (distToPlayer < agroRange)
+        if (currentHealth > 0)
         {
-            // animation walk
-            ChasePlayer();
-        }
-        else
-        {
-            // animation idle
-            StopChasing();
+            if (distToPlayer < agroRange)
+            {
+                ChasePlayer();
+                anim.SetBool("isChasing", true);
+            }
+            else
+            {
+                StopChasing();
+                anim.SetBool("isChasing", false);
+            }
         }
     }
 
