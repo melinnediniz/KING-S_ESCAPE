@@ -14,7 +14,7 @@ public class ObjectFall : MonoBehaviour
         instance = this;
     }
     
-    public void fall(){
+    public void Fall(){
         rig.bodyType = RigidbodyType2D.Dynamic;
     }
 }

@@ -7,6 +7,6 @@ public class Detector : MonoBehaviour
 
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D collider) {
-        ObjectFall.instance.fall();
+        ObjectFall.instance.Fall();
     }
 }

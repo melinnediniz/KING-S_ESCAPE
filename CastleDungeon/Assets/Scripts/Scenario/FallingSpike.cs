@@ -46,7 +46,7 @@ public class FallingSpike : MonoBehaviour
 
         if (col.gameObject.layer == 6)
         {
-            Destroy(gameObject, 0.2f);
+            Destroy(gameObject);
         }
     }
 }
