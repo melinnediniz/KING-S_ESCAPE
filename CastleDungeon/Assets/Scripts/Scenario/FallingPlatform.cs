@@ -6,6 +6,7 @@ public class FallingPlatform : MonoBehaviour
 {
 
     [SerializeField] private float fallingTime;
+    [SerializeField] private float destroyTime;
 
     private TargetJoint2D _target;
     private BoxCollider2D _boxCollider;
@@ -24,13 +25,19 @@ public class FallingPlatform : MonoBehaviour
             Invoke("Falling", fallingTime);
         }
 
+        if (collision.gameObject.layer == 6)
+        {
+            _target.enabled = true;
+            
+        }
+
     }
 
     void Falling()
     {
             _target.enabled = false;
-            _boxCollider.isTrigger = true;
+            //_boxCollider.isTrigger = true;
             
-            Destroy(gameObject, 1.5f);
+            Destroy(gameObject, destroyTime);
     }
 }

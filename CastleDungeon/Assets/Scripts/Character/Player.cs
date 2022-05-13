@@ -56,7 +56,8 @@ public class Player : MonoBehaviour
         }
     }//end
 
-    private void OnCollisionEnter2D(Collision2D collision) {
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
         Anim.SetBool("jump", false);
     }
 
