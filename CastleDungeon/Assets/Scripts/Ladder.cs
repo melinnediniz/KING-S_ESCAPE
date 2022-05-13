@@ -42,13 +42,9 @@ public class Ladder : MonoBehaviour
     {
         if (isUnder)
         {
-            rb2DPlayer.gravityScale = 0f;
             rb2DPlayer.velocity = new Vector2(rb2DPlayer.velocity.x, _vertical * speed);
         }
-        else
-        {
-            rb2DPlayer.gravityScale = 2f;
-        }
+
     }
 
 
@@ -56,6 +52,7 @@ public class Ladder : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
+            rb2DPlayer.gravityScale = 0f;
             animPlayer.SetBool("climbing", true);
             isUnder = true;
         }
@@ -68,7 +65,9 @@ public class Ladder : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             animPlayer.SetBool("climbing", false);
-            isUnder = false;
+            isUnder = false; 
+            rb2DPlayer.gravityScale = 2f;
+
         }
     }
 

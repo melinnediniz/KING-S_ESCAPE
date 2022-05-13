@@ -22,18 +22,11 @@ public class ResetBoxes : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            anim.SetBool("flip", true);
             ResetPosition();
+            anim.SetTrigger("flip");
         }
     }
-
-    private void OnTriggerExit2D(Collider2D col)
-    {
-        if (col.CompareTag("Player"))
-        {
-            anim.SetBool("flip", false);
-        }
-    }
+    
 
     private void ResetPosition()
     {
