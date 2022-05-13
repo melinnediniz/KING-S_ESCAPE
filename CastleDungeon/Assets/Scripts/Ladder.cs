@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Ladder : MonoBehaviour
@@ -12,9 +13,7 @@ public class Ladder : MonoBehaviour
 
     [SerializeField]
     private bool  isUnder;
-
-    [SerializeField]
-    private bool isClimbing;
+    
 
     public Rigidbody2D rb2DPlayer;
     public Animator playerAnim;
@@ -28,7 +27,6 @@ public class Ladder : MonoBehaviour
     void Update()
     {
         _vertical = Input.GetAxis("Vertical");
-        CheckInput();
     }
 
     private void FixedUpdate()
@@ -42,9 +40,8 @@ public class Ladder : MonoBehaviour
 
     private void Climb()
     {
-        if (isClimbing)
+        if (isUnder)
         {
-            
             rb2DPlayer.gravityScale = 0f;
             rb2DPlayer.velocity = new Vector2(rb2DPlayer.velocity.x, _vertical * speed);
         }
@@ -54,20 +51,13 @@ public class Ladder : MonoBehaviour
         }
     }
 
-    private void CheckInput()
-    {
-        if (isUnder && Mathf.Abs(_vertical) > 0f)
-        {
-            isClimbing = true;
-        }
-    }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            isUnder = true;
             animPlayer.SetBool("climbing", true);
+            isUnder = true;
         }
         
         
@@ -77,9 +67,10 @@ public class Ladder : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            isUnder = false;
-            isClimbing = false;
             animPlayer.SetBool("climbing", false);
+            isUnder = false;
         }
     }
+
+
 }
