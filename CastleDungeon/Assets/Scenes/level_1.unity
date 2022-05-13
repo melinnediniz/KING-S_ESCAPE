@@ -8882,9 +8882,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2809814611661616138, guid: be7e4d21e56afad49a9fad7b7debbb77, type: 3}
+      propertyPath: attackDamage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2809814611661616138, guid: be7e4d21e56afad49a9fad7b7debbb77, type: 3}
+      propertyPath: enemyLayers.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 2809814611661616142, guid: be7e4d21e56afad49a9fad7b7debbb77, type: 3}
       propertyPath: m_EdgeRadius
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2809814611767877151, guid: be7e4d21e56afad49a9fad7b7debbb77, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.92
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be7e4d21e56afad49a9fad7b7debbb77, type: 3}
