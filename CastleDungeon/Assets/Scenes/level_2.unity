@@ -1086,7 +1086,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 392646389}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 526717974}
+        m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+        m_MethodName: DisplayNextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &392646389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1469,9 +1481,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7689f65fa8716645ab78780ab7a51e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titleText: {fileID: 0}
-  dialogueText: {fileID: 0}
-  animator: {fileID: 0}
+  titleText: {fileID: 1719856613}
+  dialogueText: {fileID: 750136543}
 --- !u!4 &550094628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3443549347478202812, guid: c31c1634bb2b2f34383807514d228838, type: 3}
@@ -7529,6 +7540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1258985290}
   - component: {fileID: 1258985291}
+  - component: {fileID: 1258985292}
   m_Layer: 0
   m_Name: TutorialDetector
   m_TagString: Untagged
@@ -7577,6 +7589,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.68785286, y: 1.546257}
   m_EdgeRadius: 0
+--- !u!114 &1258985292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258985289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee550b5cc3a447439d3dde7c93da828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    title: Tutorial
+    sentences:
+    - "Aperte esp\xE7ao e bdlwrk"
+    - EJRJNF EJNGN N RJNVNHRJ UJEJV
 --- !u!1001 &1264781557
 PrefabInstance:
   m_ObjectHideFlags: 0
