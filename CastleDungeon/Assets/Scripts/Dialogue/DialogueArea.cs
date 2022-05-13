@@ -6,8 +6,10 @@ using UnityEngine;
 
 public class DialogueArea : MonoBehaviour
 {
+    
+    [SerializeField] private Animator anim;
+    [SerializeField] private GameObject warning;
     public Dialogue dialogue;
-    public Animator anim;
     private int _count;
 
     void OnTriggerEnter2D(Collider2D col)
@@ -15,6 +17,7 @@ public class DialogueArea : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             TriggerDialogue();
+            Destroy(warning, 0.5f);
         }
     }
 
@@ -33,6 +36,7 @@ public class DialogueArea : MonoBehaviour
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             _count += 1;
         }
+        
     }
     
 }

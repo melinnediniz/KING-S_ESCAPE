@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Spike
   - Text
+  - popup
   layers:
   - Default
   - TransparentFX
