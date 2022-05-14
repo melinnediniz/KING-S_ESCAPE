@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    public static GameController instance;
+    public static GameController Instance;
     public GameObject gameOver;
+    public GameObject pause;
     public bool isPaused;
  
     void Start()
     {
-        instance = this; 
+        Instance = this; 
     }
 
     public void ShowGameOver()
@@ -24,12 +26,27 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadScene(lvlName);
     }
-    
-    public void PauseGame()
+
+    public void Pause()
     {
-        if(!isPaused)
+        EventSystem.current.GetComponent<EventSystem>().SetSelectedGameObject(null);
+        isPaused = !isPaused;
+        PauseGame();
+    }
+    
+    private void PauseGame()
+    {
+        if(isPaused)
         {
-                
+            Time.timeScale = 0f;
+            AudioListener.pause = true;
+            pause.SetActive(true);
+        }
+        else 
+        {
+            Time.timeScale = 1;
+            AudioListener.pause = false;
+            pause.SetActive(false);
         }
     }
 
