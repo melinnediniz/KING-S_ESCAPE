@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -8,8 +9,9 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> _phrases;
     [SerializeField] private Text titleText;
     [SerializeField] private Text dialogueText;
+    [SerializeField] private GameObject dialogueBox;
 
-    [SerializeField] private Animator anim;
+//    [SerializeField] private Animator anim;
     
 
     void Start () {
@@ -18,7 +20,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
-        anim.SetBool("displayed", true);
+        dialogueBox.SetActive(true);
 
         titleText.text = dialogue.title;
 
@@ -43,6 +45,7 @@ public class DialogueManager : MonoBehaviour
         string phrase = _phrases.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeText(phrase));
+        EventSystem.current.GetComponent<EventSystem>().SetSelectedGameObject(null);
     }
 
     IEnumerator TypeText (string phrase)
@@ -57,7 +60,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        anim.SetBool("displayed", false);
+        dialogueBox.SetActive(false);
     }
     
 }

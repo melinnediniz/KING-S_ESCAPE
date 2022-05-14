@@ -7,8 +7,9 @@ using UnityEngine;
 public class DialogueArea : MonoBehaviour
 {
     
-    [SerializeField] private Animator anim;
+    //[SerializeField] private Animator anim;
     [SerializeField] private GameObject warning;
+    [SerializeField] private GameObject dialogueBox;
     public Dialogue dialogue;
     private int _count;
 
@@ -25,7 +26,7 @@ public class DialogueArea : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            anim.SetBool("displayed", false);
+            dialogueBox.SetActive(false);
         }
     }
 
