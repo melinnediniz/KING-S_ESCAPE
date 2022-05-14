@@ -4,11 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Spike
   - Chain
   - popup
   - Saw
   - Bullet
+  - Trap
   layers:
   - Default
   - TransparentFX
