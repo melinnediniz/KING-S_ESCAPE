@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7afa3c89bb81af743838a68358f52bd0
+guid: 0388e59fd38929142a295f182a1793a3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle 01_0
+      name: Hit 03_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1
-        width: 27
-        height: 25
+        x: 5
+        y: 3
+        width: 29
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4571b30c0356a8b48a3d9529ae4b147c
-      internalID: -1371608778
+      spriteID: 2071c8777fa007a409ad959f604b45c9
+      internalID: -946774077
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Idle 01_0: -1371608778
+      Hit 03_0: -946774077
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
