@@ -34,9 +34,16 @@ public class PlayerCombat : MonoBehaviour
 
         foreach (Collider2D enemy in hitEnemies)
         {
+            // enemy layer collision
             if (enemy.gameObject.layer == 8)
             {
                 enemy.GetComponent<Stalker>().TakeDamage(attackDamage);
+            }
+
+            // box(obstacle) collision
+            else if (enemy.gameObject.tag == "Box")
+            {
+                Destroy(enemy);
             }
         }
     }

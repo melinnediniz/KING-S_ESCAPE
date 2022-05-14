@@ -17,6 +17,9 @@ public class Stalker : MonoBehaviour
     public float maxHealth;
     public float currentHealth;
 
+    // combat
+    public int attackDamage;
+
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
@@ -84,5 +87,13 @@ public class Stalker : MonoBehaviour
     void StopChasing()
     {
         rig.velocity = new Vector2(0f, 0f);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            player.GetComponent<Player>().TakeDamage(attackDamage);
+        }
     }
 }

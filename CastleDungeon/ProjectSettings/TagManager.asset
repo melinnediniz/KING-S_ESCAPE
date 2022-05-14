@@ -9,6 +9,8 @@ TagManager:
   - Saw
   - Bullet
   - Trap
+  - Spike
+  - Box
   layers:
   - Default
   - TransparentFX

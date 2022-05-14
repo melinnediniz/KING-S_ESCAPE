@@ -465,11 +465,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2865323460580947123, guid: 9b338c7409e7ccb4abdb476f7bf6db6a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.01
+      value: -8.69
       objectReference: {fileID: 0}
     - target: {fileID: 2865323460580947123, guid: 9b338c7409e7ccb4abdb476f7bf6db6a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.92
+      value: -3.89
       objectReference: {fileID: 0}
     - target: {fileID: 2865323460580947123, guid: 9b338c7409e7ccb4abdb476f7bf6db6a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2413,6 +2413,14 @@ PrefabInstance:
     - target: {fileID: 2809814611661616137, guid: be7e4d21e56afad49a9fad7b7debbb77, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2809814611661616138, guid: be7e4d21e56afad49a9fad7b7debbb77, type: 3}
+      propertyPath: enemyLayers.m_Bits
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 2809814611661616139, guid: be7e4d21e56afad49a9fad7b7debbb77, type: 3}
+      propertyPath: currentHealth
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be7e4d21e56afad49a9fad7b7debbb77, type: 3}
