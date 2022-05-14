@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_move_2
       objectReference: {fileID: 0}
+    - target: {fileID: 3774095893584171753, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     - target: {fileID: 3774095893584171762, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -397,6 +401,10 @@ PrefabInstance:
     - target: {fileID: 3774095893584171753, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
       propertyPath: m_Name
       value: Saw_move
+      objectReference: {fileID: 0}
+    - target: {fileID: 3774095893584171753, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
+      propertyPath: m_TagString
+      value: Saw
       objectReference: {fileID: 0}
     - target: {fileID: 3774095893584171762, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
       propertyPath: m_RootOrder
@@ -681,6 +689,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_29
       objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -747,6 +759,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -913,6 +929,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_line_4
       objectReference: {fileID: 0}
+    - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     - target: {fileID: 2869972651143568229, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -978,6 +998,10 @@ PrefabInstance:
     - target: {fileID: 3774095893584171753, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
       propertyPath: m_Name
       value: Saw_move_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3774095893584171753, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
+      propertyPath: m_TagString
+      value: Saw
       objectReference: {fileID: 0}
     - target: {fileID: 3774095893584171762, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
       propertyPath: m_RootOrder
@@ -1123,6 +1147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_line_8
       objectReference: {fileID: 0}
+    - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     - target: {fileID: 2869972651143568229, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -1188,6 +1216,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_33
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -1426,6 +1458,10 @@ PrefabInstance:
     - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
       propertyPath: m_Name
       value: Saw_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
+      propertyPath: m_TagString
+      value: Saw
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
@@ -1736,6 +1772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_6
       objectReference: {fileID: 0}
+    - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
 --- !u!1001 &312447608
@@ -1748,6 +1788,10 @@ PrefabInstance:
     - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_Name
       value: Saw_line_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
+      propertyPath: m_TagString
+      value: Saw
       objectReference: {fileID: 0}
     - target: {fileID: 2869972651143568229, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_SortingOrder
@@ -1868,6 +1912,16 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3142012533596357689, guid: 27e78b48b0450be4bab511e344eea8c6, type: 3}
   m_PrefabInstance: {fileID: 360410300}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &370835660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6993470118390865295, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+  m_PrefabInstance: {fileID: 2100279403}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &370835663 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+  m_PrefabInstance: {fileID: 2100279403}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &383609736 stripped
 Transform:
@@ -2006,6 +2060,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw
       objectReference: {fileID: 0}
+    - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
 --- !u!1001 &474103694
@@ -2095,7 +2153,7 @@ PrefabInstance:
     - target: {fileID: 3394340522273727432, guid: f9c5a14804eeb3b41b4c454be950f6b9, type: 3}
       propertyPath: anim
       value: 
-      objectReference: {fileID: 512962760}
+      objectReference: {fileID: 0}
     - target: {fileID: 3394340522273727432, guid: f9c5a14804eeb3b41b4c454be950f6b9, type: 3}
       propertyPath: titleText
       value: 
@@ -2180,7 +2238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8414961376535558193, guid: aadf7ceb6ed325d4ca758a7474b1d3d5, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8414961376535558193, guid: aadf7ceb6ed325d4ca758a7474b1d3d5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2283,11 +2341,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &512962760 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8414961376535558194, guid: aadf7ceb6ed325d4ca758a7474b1d3d5, type: 3}
-  m_PrefabInstance: {fileID: 512962756}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &515545367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6452,6 +6505,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_36
       objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -6686,6 +6743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_3
       objectReference: {fileID: 0}
+    - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
 --- !u!1001 &740550058
@@ -6698,6 +6759,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -6885,6 +6950,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_25
       objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -6936,6 +7005,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
   m_PrefabInstance: {fileID: 789142119}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &800632540 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1482234880679344587, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+  m_PrefabInstance: {fileID: 1330266537}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 123ecde822cb5e34db736254eb00368b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &812878726 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8339452450373474892, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
@@ -6951,6 +7031,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_26
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -7142,6 +7226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_16
       objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -7204,6 +7292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_line_10
       objectReference: {fileID: 0}
+    - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     - target: {fileID: 2869972651143568229, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -7264,6 +7356,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -7370,6 +7466,10 @@ PrefabInstance:
     - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
       propertyPath: m_Name
       value: Saw_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
+      propertyPath: m_TagString
+      value: Saw
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
@@ -7710,6 +7810,10 @@ PrefabInstance:
     - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_Name
       value: Saw_line_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
+      propertyPath: m_TagString
+      value: Saw
       objectReference: {fileID: 0}
     - target: {fileID: 2869972651143568229, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_SortingOrder
@@ -9005,6 +9109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_21
       objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -9239,6 +9347,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_4
       objectReference: {fileID: 0}
+    - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
 --- !u!1001 &1179258892
@@ -9314,6 +9426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_2
       objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -9376,6 +9492,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_20
       objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -9437,6 +9557,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -9551,6 +9675,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -12971,6 +13099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_line
       objectReference: {fileID: 0}
+    - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     - target: {fileID: 2869972651143568229, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -13105,7 +13237,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -13121,6 +13253,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1314110965}
+  - {fileID: 370835663}
   - {fileID: 512962757}
   m_Father: {fileID: 0}
   m_RootOrder: 14
@@ -13130,11 +13264,77 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!224 &1314110965 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+  m_PrefabInstance: {fileID: 1419620560}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1316687886 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2869972651143568230, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
   m_PrefabInstance: {fileID: 1302422639}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1330266537
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1482234880679344586, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482234880679344586, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.43627182
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482234880679344586, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.020232
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482234880679344586, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.945255
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482234880679344586, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482234880679344586, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482234880679344586, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482234880679344586, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482234880679344586, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482234880679344586, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482234880679344586, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482234880679344587, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 370835660}
+    - target: {fileID: 1482234880679344596, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: m_Name
+      value: Game Controller
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
 --- !u!4 &1332330443 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 942161648387018472, guid: edad6bc79c6093e4cb62fed136d824b5, type: 3}
@@ -13213,6 +13413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -13274,6 +13478,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -13398,6 +13606,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_23
       objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -13444,6 +13656,115 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+--- !u!1001 &1419620560
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1302589418}
+    m_Modifications:
+    - target: {fileID: 7872265176161949562, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_Name
+      value: RestartButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 288
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949563, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 800632540}
+    - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: level_3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
 --- !u!1001 &1440191718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13454,6 +13775,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_27
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -13516,6 +13841,10 @@ PrefabInstance:
     - target: {fileID: 3774095893584171753, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
       propertyPath: m_Name
       value: Saw_move_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3774095893584171753, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
+      propertyPath: m_TagString
+      value: Saw
       objectReference: {fileID: 0}
     - target: {fileID: 3774095893584171762, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
       propertyPath: m_RootOrder
@@ -13590,6 +13919,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -13718,6 +14051,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -13896,6 +14233,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_line_9
       objectReference: {fileID: 0}
+    - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     - target: {fileID: 2869972651143568229, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -14018,6 +14359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_12
       objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -14074,6 +14419,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -14208,6 +14557,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_3
       objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -14314,6 +14667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_2
       objectReference: {fileID: 0}
+    - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
 --- !u!1001 &1634289478
@@ -14326,6 +14683,10 @@ PrefabInstance:
     - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_Name
       value: Saw_line_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
+      propertyPath: m_TagString
+      value: Saw
       objectReference: {fileID: 0}
     - target: {fileID: 2869972651143568229, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_SortingOrder
@@ -14395,6 +14756,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -14562,6 +14927,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_28
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -14739,6 +15108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_10
       objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -14845,6 +15218,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -14964,6 +15341,10 @@ PrefabInstance:
     - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_Name
       value: Saw_line_11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
+      propertyPath: m_TagString
+      value: Saw
       objectReference: {fileID: 0}
     - target: {fileID: 2869972651143568229, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_SortingOrder
@@ -15339,6 +15720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_5
       objectReference: {fileID: 0}
+    - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
 --- !u!1001 &1899046485
@@ -15351,6 +15736,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -15479,6 +15868,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -15613,6 +16006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_34
       objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -15675,6 +16072,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_line_12
       objectReference: {fileID: 0}
+    - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     - target: {fileID: 2869972651143568229, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -15735,6 +16136,10 @@ PrefabInstance:
     - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_Name
       value: Saw_line_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
+      propertyPath: m_TagString
+      value: Saw
       objectReference: {fileID: 0}
     - target: {fileID: 2869972651143568229, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_SortingOrder
@@ -15921,6 +16326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_line_5
       objectReference: {fileID: 0}
+    - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     - target: {fileID: 2869972651143568229, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -15987,6 +16396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -16048,6 +16461,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -16115,6 +16532,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -16324,6 +16745,147 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edad6bc79c6093e4cb62fed136d824b5, type: 3}
+--- !u!1001 &2100279403
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1302589418}
+    m_Modifications:
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 172.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 93.382
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0042229
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00020123
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865295, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_Name
+      value: GameOverPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470118390865295, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470119046480809, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 800632540}
+    - target: {fileID: 6993470119046480809, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470119046480809, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: level_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470119416267798, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_fontSize
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470119416267798, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470119416267798, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470119416267799, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 172.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470119416267799, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 46.691
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470119416267799, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00005722
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993470119416267799, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 23.346
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
 --- !u!1001 &2110737905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16334,6 +16896,10 @@ PrefabInstance:
     - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_Name
       value: Saw_line_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
+      propertyPath: m_TagString
+      value: Saw
       objectReference: {fileID: 0}
     - target: {fileID: 2869972651143568229, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_SortingOrder
@@ -16403,6 +16969,10 @@ PrefabInstance:
     - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_Name
       value: Saw_line_13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
+      propertyPath: m_TagString
+      value: Saw
       objectReference: {fileID: 0}
     - target: {fileID: 2869972651143568229, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_SortingOrder
@@ -16528,7 +17098,7 @@ PrefabInstance:
     - target: {fileID: 1088436159478669998, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: anim
       value: 
-      objectReference: {fileID: 512962760}
+      objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669998, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: warning
       value: 
@@ -16567,6 +17137,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -16629,6 +17203,10 @@ PrefabInstance:
     - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_Name
       value: Spikes_9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616954228250794097, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 8952002518759964615, guid: 8872e853409aaf94ab5886e182ec64da, type: 3}
       propertyPath: m_RootOrder
@@ -16735,6 +17313,10 @@ PrefabInstance:
     - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
       propertyPath: m_Name
       value: Saw_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
+      propertyPath: m_TagString
+      value: Saw
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
