@@ -65,6 +65,12 @@ public class Player : MonoBehaviour
             GameController.instance.ShowGameOver();
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.tag == "Saw")
+        {
+            GameController.instance.ShowGameOver();
+            Destroy(gameObject);
+        }
     }
 
     public void DoorIn(){

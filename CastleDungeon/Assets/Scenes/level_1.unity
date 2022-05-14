@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_move_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3774095893584171753, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     - target: {fileID: 3774095893584171762, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5619,6 +5623,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_2
       objectReference: {fileID: 0}
+    - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     - target: {fileID: 8339452450373474899, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -10105,8 +10113,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0038043, y: 2.2691}
-  m_SizeDelta: {x: 188.12, y: 101.03}
+  m_AnchoredPosition: {x: 0.0038043, y: 0.0015271}
+  m_SizeDelta: {x: 188.12, y: 102.06}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1881634066
 MonoBehaviour:
@@ -10338,6 +10346,10 @@ PrefabInstance:
     - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
       propertyPath: m_Name
       value: Saw_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
+      propertyPath: m_TagString
+      value: Saw
       objectReference: {fileID: 0}
     - target: {fileID: 8339452450373474899, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
       propertyPath: m_SortingOrder
@@ -10711,6 +10723,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw_line
       objectReference: {fileID: 0}
+    - target: {fileID: 2869972651143568228, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
+      propertyPath: m_TagString
+      value: Saw
+      objectReference: {fileID: 0}
     - target: {fileID: 2869972651143568230, guid: 1f57527f57ad7bc45a06993f82bd854f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -10767,6 +10783,10 @@ PrefabInstance:
     - target: {fileID: 3774095893584171753, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
       propertyPath: m_Name
       value: Saw_move
+      objectReference: {fileID: 0}
+    - target: {fileID: 3774095893584171753, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
+      propertyPath: m_TagString
+      value: Saw
       objectReference: {fileID: 0}
     - target: {fileID: 3774095893584171762, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
       propertyPath: m_RootOrder
@@ -10867,6 +10887,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
       propertyPath: m_Name
+      value: Saw
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339452450373474897, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
+      propertyPath: m_TagString
       value: Saw
       objectReference: {fileID: 0}
     - target: {fileID: 8339452450373474899, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
