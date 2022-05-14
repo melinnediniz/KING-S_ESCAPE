@@ -5,8 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Spike
-  - Text
-  - popup
+  - Chain
   layers:
   - Default
   - TransparentFX
