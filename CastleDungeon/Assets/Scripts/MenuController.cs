@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;  //biblioteca para manipular a cena
 
 public class MenuController : MonoBehaviour
 {
-    public string lvlname;
+    //public string scene;
     
-    public void btPlay(){
-        SceneManager.LoadScene("level_1");  //carrega a cenas
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+    public void LoadScene(string scene){
+        SceneManager.LoadScene(scene);  //carrega a cenas
     }
 }
