@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     public float Speed;  //velocidade
     public float JumpForce;  //força do pulo
     public bool OnGround;  //player encostando no chão
+    private bool isAlive = true;
+    public int currentHealth;
     public Transform GroundDetect;  //verifica o chão
     public LayerMask IsGround;  //verifica o que é chão
     public static Player instance;
@@ -14,7 +16,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D Rig;  //colisor
     private BoxCollider2D BoxCol;
     private Animator Anim;  //relações de animação
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +28,13 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
-        Jump();
+        CheckLife();
+
+        if (isAlive)
+        {
+            Move();
+            Jump();
+        }
     }
 
     void Move()
@@ -56,6 +63,22 @@ public class Player : MonoBehaviour
         }
     }//end
 
+    void CheckLife()
+    {
+        if (currentHealth <= 0)
+        {
+            isAlive = false;
+            Debug.Log("Player is dead!"); // death test
+            // die function
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        // hit anim
+        currentHealth -= damage;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Anim.SetBool("jump", false);
@@ -77,5 +100,4 @@ public class Player : MonoBehaviour
         Anim.SetTrigger("door_in");
         Destroy(gameObject, 1f);
     }
-    
 }

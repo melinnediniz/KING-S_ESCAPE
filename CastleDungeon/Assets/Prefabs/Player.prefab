@@ -173,6 +173,7 @@ MonoBehaviour:
   Speed: 5
   JumpForce: 6
   OnGround: 0
+  currentHealth: 3
   GroundDetect: {fileID: 2809814612867571815}
   IsGround:
     serializedVersion: 2
@@ -190,10 +191,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackPoint: {fileID: 2809814611767877151}
-  attackRange: 0.8
   enemyLayers:
     serializedVersion: 2
     m_Bits: 0
+  attackRange: 0.8
+  attackDamage: 1
 --- !u!1 &2809814611767877150
 GameObject:
   m_ObjectHideFlags: 0
