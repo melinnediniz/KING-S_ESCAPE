@@ -59,6 +59,12 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Anim.SetBool("jump", false);
+
+        if (collision.gameObject.tag == "Spike")
+        {
+            GameController.instance.ShowGameOver();
+            Destroy(gameObject);
+        }
     }
 
     public void DoorIn(){
