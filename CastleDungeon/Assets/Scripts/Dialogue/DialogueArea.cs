@@ -21,14 +21,7 @@ public class DialogueArea : MonoBehaviour
             Destroy(warning, 0.5f);
         }
     }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            dialogueBox.SetActive(false);
-        }
-    }
+    
 
     public void TriggerDialogue()
     {
