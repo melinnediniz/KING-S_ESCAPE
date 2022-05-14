@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
 {
     public static GameController instance;
     public GameObject gameOver;
+    public bool isPaused;
  
     void Start()
     {
@@ -22,6 +23,14 @@ public class GameController : MonoBehaviour
     public void RestartGame(string lvlName)
     {
         SceneManager.LoadScene(lvlName);
+    }
+    
+    public void PauseGame()
+    {
+        if(!isPaused)
+        {
+                
+        }
     }
 
 }

@@ -961,7 +961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669993, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: m_Size.x
-      value: 5.899537
+      value: 7.566877
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669993, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: m_Size.y
@@ -969,7 +969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669993, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: m_Offset.x
-      value: 3.2181525
+      value: 2.3844826
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669993, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: m_Offset.y
@@ -9102,19 +9102,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669993, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: m_Size.x
-      value: 6.1044507
+      value: 4.991849
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669993, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: m_Size.y
-      value: 3.1649656
+      value: 4.8783154
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669993, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: m_Offset.x
-      value: 3.931431
+      value: 2.2101989
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669993, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: m_Offset.y
-      value: 0.6339178
+      value: -0.2227571
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669995, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: m_Name
@@ -9620,7 +9620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669998, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: dialogue.phrases.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669998, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: dialogue.phrases.Array.data[0]
@@ -9629,8 +9629,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669998, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: dialogue.phrases.Array.data[1]
-      value: "Mas cuidado, voce n\xE3o tem forcas para puxa-las, se ficarem presas
-        voce precisara reiniciar!"
+      value: 'Mas aqui vao alguns cuidados: '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088436159478669998, guid: 814d6321a823fc34884dd2815768320f, type: 3}
+      propertyPath: dialogue.phrases.Array.data[2]
+      value: Voce nao tem forcas para pux-las, se ficarem presas voce tera que reinicia-las!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088436159478669998, guid: 814d6321a823fc34884dd2815768320f, type: 3}
+      propertyPath: dialogue.phrases.Array.data[3]
+      value: Voce pode quebra-las com o martelo, mas cuidado, se quebrar a caixa
+        errada tambem tera que reinicia-las!
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1088436159478669993, guid: 814d6321a823fc34884dd2815768320f, type: 3}
