@@ -28,6 +28,7 @@ namespace Controllers
 
         void Start()
         {
+            Time.timeScale = 1;
             _timer.StartTimer();
             _saveGame.SaveScene(_scene);
             Instance = this;
@@ -72,7 +73,6 @@ namespace Controllers
             }
             else 
             {
-                dialogue.SetActive(true);
                 Time.timeScale = 1;
                 AudioListener.pause = false;
                 pause.SetActive(false);

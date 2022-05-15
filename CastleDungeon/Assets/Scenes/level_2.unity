@@ -415,7 +415,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.08671284, y: 0.16186428}
@@ -1179,6 +1179,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 812582143}
     - target: {fileID: 1482234880679344587, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 1396937448}
+    - target: {fileID: 1482234880679344587, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1733980698}
@@ -1549,8 +1553,8 @@ Transform:
   m_Children:
   - {fileID: 526717973}
   - {fileID: 1258985290}
-  - {fileID: 166157757}
   - {fileID: 1197729928}
+  - {fileID: 166157757}
   - {fileID: 148220148}
   - {fileID: 1139853974}
   - {fileID: 1551416740}
@@ -2087,7 +2091,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8998132735092050833, guid: 17408e77480e28b4ab0a40e44cf358d5, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8998132735092050833, guid: 17408e77480e28b4ab0a40e44cf358d5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12893,7 +12897,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1088436159478669992, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669992, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: m_LocalPosition.x

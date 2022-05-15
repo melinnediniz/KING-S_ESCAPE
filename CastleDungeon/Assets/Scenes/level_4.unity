@@ -20523,6 +20523,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2023441291}
     - target: {fileID: 1482234880679344587, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 166257000}
+    - target: {fileID: 1482234880679344587, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1450417150}
