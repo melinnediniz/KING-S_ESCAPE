@@ -32,7 +32,10 @@ public class ResetBoxes : MonoBehaviour
     {
         for (int i = 0; i < boxList.Count; i ++)
         {
-            boxList[i].position = boxPos[i];
+            if (boxList[i] != null)
+            {
+                boxList[i].position = boxPos[i];
+            }
         }
     }
     

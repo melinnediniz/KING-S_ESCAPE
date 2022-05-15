@@ -100,7 +100,7 @@ public class Stalker : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             player.GetComponent<Player>().TakeDamage(attackDamage);
 
@@ -117,7 +117,7 @@ public class Stalker : MonoBehaviour
             }
         }
 
-        if (collision.gameObject.tag == "Trap")
+        if (collision.gameObject.CompareTag("Trap"))
         {
             currentHealth = 0;
         }

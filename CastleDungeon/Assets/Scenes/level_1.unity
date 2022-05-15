@@ -9924,12 +9924,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669998, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: dialogue.phrases.Array.data[2]
-      value: Voce nao tem forcas para pux-las, se ficarem presas voce tera que reinicia-las!
+      value: Voce nao tem forcas para pux-las, se ficarem presas voce tera que reinicia-las
+        em um dispositivo que vera daqui a pouco!
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669998, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: dialogue.phrases.Array.data[3]
       value: Voce pode quebra-las com o martelo, mas cuidado, se quebrar a caixa
-        errada tambem tera que reinicia-las!
+        errada como consequencia tera que reiniciar a fase inteira!
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1088436159478669993, guid: 814d6321a823fc34884dd2815768320f, type: 3}
