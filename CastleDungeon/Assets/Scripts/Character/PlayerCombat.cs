@@ -38,6 +38,20 @@ public class PlayerCombat : MonoBehaviour
             if (enemy.gameObject.layer == 8)
             {
                 enemy.GetComponent<Stalker>().TakeDamage(attackDamage);
+
+                Transform enemyTransform = enemy.gameObject.GetComponent<Transform>();
+
+                // enemy is in the left side of the player
+                if (enemyTransform.position.x > this.transform.position.x)
+                {
+                    enemy.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(3, 2), ForceMode2D.Impulse);
+                }
+
+                // enemy is in the right side of the player
+                else if (enemyTransform.position.x < this.transform.position.x)
+                {
+                    enemy.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-3, 2), ForceMode2D.Impulse);
+                }
             }
 
             // box(obstacle) collision

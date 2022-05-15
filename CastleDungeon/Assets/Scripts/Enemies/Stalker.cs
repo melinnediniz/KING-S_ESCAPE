@@ -101,6 +101,18 @@ public class Stalker : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             player.GetComponent<Player>().TakeDamage(attackDamage);
+
+            // enemy is in the left side of the player
+            if (transform.position.x < player.position.x)
+            {
+                player.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(3, 2), ForceMode2D.Impulse);
+            }
+
+            // enemy is in the right side of the player
+            else if (transform.position.x > player.position.x)
+            {
+                player.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-3, 2), ForceMode2D.Impulse);
+            }
         }
 
         if (collision.gameObject.tag == "Trap")
