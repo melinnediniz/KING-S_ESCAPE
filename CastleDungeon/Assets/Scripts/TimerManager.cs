@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class TimerManager : MonoBehaviour
 {
     private bool _timer;
-    public static TimerManager Instance;
+    public static TimerManager instance;
 
     private float _currentTime;
 
@@ -19,7 +19,7 @@ public class TimerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instance = this;
+        instance = this;
         initialTime = PlayerPrefs.GetFloat("lastTime");
         _currentTime = initialTime;
     }

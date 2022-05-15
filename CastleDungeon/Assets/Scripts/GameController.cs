@@ -16,12 +16,12 @@ public class GameController : MonoBehaviour
     void Start()
     {
         Instance = this;
-        TimerManager.Instance.StartTimer();
+        TimerManager.instance.StartTimer();
     }
 
     public void ShowGameOver()
     {
-        TimerManager.Instance.StopTimer();
+        TimerManager.instance.StopTimer();
         gameOver.SetActive(true);
     }
 
