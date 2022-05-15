@@ -21,9 +21,9 @@ public class DialogueArea : MonoBehaviour
             Destroy(warning, 0.5f);
         }
     }
-    
 
-    public void TriggerDialogue()
+
+    private void TriggerDialogue()
     {
         if (_count <= 0)
         {

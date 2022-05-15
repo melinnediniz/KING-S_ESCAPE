@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
     void Move()
     {
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);  //pega o Input atual
-        transform.position += movement * Time.deltaTime * Speed;  //transforma(move) o objeto
+        transform.position += movement * (Time.deltaTime * Speed);  //transforma(move) o objeto
 
         if(Input.GetAxis("Horizontal") > 0f){  //se Input horizontal for 1 (direita)
             transform.eulerAngles = new Vector3(0f,0f,0f);  //transforma a direção
@@ -79,21 +79,28 @@ public class Player : MonoBehaviour
         currentHealth -= damage;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D col)
     {
         Anim.SetBool("jump", false);
 
-        if (collision.gameObject.tag == "Spike")
+        if (col.gameObject.CompareTag("Spike"))
         {
             GameController.Instance.ShowGameOver();
             Destroy(gameObject);
         }
 
-        if (collision.gameObject.tag == "Saw")
+        if (col.gameObject.CompareTag("Trap"))
         {
             GameController.Instance.ShowGameOver();
             Destroy(gameObject);
         }
+
+        if (col.gameObject.CompareTag("Saw"))
+        {
+            GameController.Instance.ShowGameOver();
+            Destroy(gameObject);
+        }
+        
     }
 
     public void DoorIn(){

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Timers;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -14,11 +15,13 @@ public class GameController : MonoBehaviour
  
     void Start()
     {
-        Instance = this; 
+        Instance = this;
+        TimerManager.Instance.StartTimer();
     }
 
     public void ShowGameOver()
     {
+        TimerManager.Instance.StopTimer();
         gameOver.SetActive(true);
     }
 
