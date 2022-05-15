@@ -1,43 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class FallingPlatform : MonoBehaviour
+namespace Scenario
 {
-
-    [SerializeField] private float fallingTime;
-    [SerializeField] private float destroyTime;
-
-    private TargetJoint2D _target;
-    private BoxCollider2D _boxCollider;
-
-    // Start is called before the first frame update
-    void Start()
+    public class FallingPlatform : MonoBehaviour
     {
-        _target = GetComponent<TargetJoint2D>();
-        _boxCollider = GetComponent<BoxCollider2D>();
-    }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.CompareTag("Player"))
+        [SerializeField] private float fallingTime;
+        [SerializeField] private float destroyTime;
+
+        private TargetJoint2D _target;
+        private BoxCollider2D _boxCollider;
+
+        // Start is called before the first frame update
+        void Start()
         {
-            Invoke("Falling", fallingTime);
+            _target = GetComponent<TargetJoint2D>();
+            _boxCollider = GetComponent<BoxCollider2D>();
         }
 
-        if (collision.gameObject.layer == 6)
+        void OnCollisionEnter2D(Collision2D collision)
         {
-            _target.enabled = true;
+            if(collision.gameObject.CompareTag("Player"))
+            {
+                Invoke("Falling", fallingTime);
+            }
+
+            if (collision.gameObject.layer == 6)
+            {
+                _target.enabled = true;
             
+            }
+
         }
 
-    }
-
-    void Falling()
-    {
+        void Falling()
+        {
             _target.enabled = false;
             //_boxCollider.isTrigger = true;
             
             Destroy(gameObject, destroyTime);
+        }
     }
 }

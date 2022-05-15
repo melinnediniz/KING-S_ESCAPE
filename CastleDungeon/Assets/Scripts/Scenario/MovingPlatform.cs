@@ -1,29 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class MovingPlatform : MonoBehaviour
+namespace Scenario
 {
-    [SerializeField]private float speed;
-    [SerializeField] private float moveTime;
-
-    private bool _dirRight;
-    private float _timer;
-    void Update()
+    public class MovingPlatform : MonoBehaviour
     {
-        if(_dirRight){
-            transform.Translate(Vector2.right * (speed * Time.deltaTime));
-        }else{
-            transform.Translate(Vector2.left * (speed * Time.deltaTime));
-        }
+        [SerializeField]private float speed;
+        [SerializeField] private float moveTime;
 
-        _timer += Time.deltaTime;
+        private bool _dirRight;
+        private float _timer;
+        void Update()
+        {
+            if(_dirRight){
+                transform.Translate(Vector2.right * (speed * Time.deltaTime));
+            }else{
+                transform.Translate(Vector2.left * (speed * Time.deltaTime));
+            }
+
+            _timer += Time.deltaTime;
         
-        if(_timer >= moveTime){
-            _dirRight = !_dirRight;
-            _timer = 0f;
-        }
+            if(_timer >= moveTime){
+                _dirRight = !_dirRight;
+                _timer = 0f;
+            }
 
+        }
     }
 }

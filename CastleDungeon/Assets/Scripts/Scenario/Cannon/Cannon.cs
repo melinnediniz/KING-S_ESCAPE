@@ -1,33 +1,33 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Cannon : MonoBehaviour
+namespace Scenario.Cannon
 {
-   public Transform firePoint;
-   public GameObject bullet;
-   private float _timeBetween;
-   public float time;
-   private Animator _anim;
-
-   private void Start()
+   public class Cannon : MonoBehaviour
    {
-      _anim = GetComponent<Animator>();
-      _timeBetween = time;
-   }
+      public Transform firePoint;
+      public GameObject bullet;
+      private float _timeBetween;
+      public float time;
+      private Animator _anim;
 
-   private void Update()
-   {
-      if (_timeBetween <= 0)
+      private void Start()
       {
-         _anim.SetTrigger("fired");
-         Instantiate(bullet, firePoint.position, firePoint.rotation);
+         _anim = GetComponent<Animator>();
          _timeBetween = time;
       }
-      else
+
+      private void Update()
       {
-         _timeBetween -= Time.deltaTime;
+         if (_timeBetween <= 0)
+         {
+            _anim.SetTrigger("fired");
+            Instantiate(bullet, firePoint.position, firePoint.rotation);
+            _timeBetween = time;
+         }
+         else
+         {
+            _timeBetween -= Time.deltaTime;
+         }
       }
    }
 }

@@ -1,125 +1,127 @@
-using System.Collections;
-using System.Collections.Generic;
+using Character;
 using UnityEngine;
 
-public class Stalker : MonoBehaviour 
+namespace Enemies
 {
-    // components variables
-    private Rigidbody2D rig;
-    private Animator anim;
-    private GameObject player;
-
-    // movement
-    public float agroRange;
-    public float speed;
-
-    // life
-    public float maxHealth;
-    public float currentHealth;
-    private bool isAlive = true;
-
-    // combat
-    public int attackDamage;
-
-    void Start()
+    public class Stalker : MonoBehaviour 
     {
-        rig = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        // components variables
+        private Rigidbody2D rig;
+        private Animator anim;
+        private GameObject player;
 
-        player = GameObject.FindGameObjectWithTag("Player");
-    }
+        // movement
+        public float agroRange;
+        public float speed;
 
-    void Update()
-    {
-        CheckDistance();
-    }
+        // life
+        public float maxHealth;
+        public float currentHealth;
+        private bool isAlive = true;
 
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        anim.SetTrigger("hit");
+        // combat
+        public int attackDamage;
 
-        if (currentHealth <= 0)
+        void Start()
         {
-            Die();
-        }
-    }
+            rig = GetComponent<Rigidbody2D>();
+            anim = GetComponent<Animator>();
 
-    void Die()
-    {
-        isAlive = false;
-        StopChasing();
-        anim.SetBool("dead", true);
-        Destroy(gameObject, 1f);
-    }
-
-    void CheckDistance()
-    {
-        if (player == null)
-        {
-            return;
+            player = GameObject.FindGameObjectWithTag("Player");
         }
 
-        float distToPlayer = Vector2.Distance(transform.position, player.transform.position);
-
-        if (isAlive)
+        void Update()
         {
-            if (distToPlayer < agroRange)
+            CheckDistance();
+        }
+
+        public void TakeDamage(int damage)
+        {
+            currentHealth -= damage;
+            anim.SetTrigger("hit");
+
+            if (currentHealth <= 0)
             {
-                ChasePlayer();
-                anim.SetBool("isChasing", true);
-            }
-            else
-            {
-                StopChasing();
-                anim.SetBool("isChasing", false);
+                Die();
             }
         }
-    }
 
-    void ChasePlayer()
-    {
-        // enemy is in the left side of the player
-        if (transform.position.x < player.transform.position.x)
+        void Die()
         {
-            rig.velocity = new Vector2(speed, 0f);
-            transform.eulerAngles = new Vector3(0f, 180f, 0f);
+            isAlive = false;
+            StopChasing();
+            anim.SetBool("dead", true);
+            Destroy(gameObject, 1f);
         }
-        // enemy is in the right side of the player
-        else if (transform.position.x > player.transform.position.x)
+
+        void CheckDistance()
         {
-            rig.velocity = new Vector2(-speed, 0f);
-            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            if (player == null)
+            {
+                return;
+            }
+
+            float distToPlayer = Vector2.Distance(transform.position, player.transform.position);
+
+            if (isAlive)
+            {
+                if (distToPlayer < agroRange)
+                {
+                    ChasePlayer();
+                    anim.SetBool("isChasing", true);
+                }
+                else
+                {
+                    StopChasing();
+                    anim.SetBool("isChasing", false);
+                }
+            }
         }
-    }
 
-    void StopChasing()
-    {
-        rig.velocity = new Vector2(0f, 0f);
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
+        void ChasePlayer()
         {
-            player.GetComponent<Player>().TakeDamage(attackDamage);
-
             // enemy is in the left side of the player
             if (transform.position.x < player.transform.position.x)
             {
-                player.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(3, 2), ForceMode2D.Impulse);
+                rig.velocity = new Vector2(speed, 0f);
+                transform.eulerAngles = new Vector3(0f, 180f, 0f);
             }
-
             // enemy is in the right side of the player
             else if (transform.position.x > player.transform.position.x)
             {
-                player.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-3, 2), ForceMode2D.Impulse);
+                rig.velocity = new Vector2(-speed, 0f);
+                transform.eulerAngles = new Vector3(0f, 0f, 0f);
             }
         }
 
-        if (collision.gameObject.CompareTag("Trap"))
+        void StopChasing()
         {
-            currentHealth = 0;
+            rig.velocity = new Vector2(0f, 0f);
+        }
+
+        void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                player.GetComponent<Player>().TakeDamage(attackDamage);
+
+                // enemy is in the left side of the player
+                if (transform.position.x < player.transform.position.x)
+                {
+                    player.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(3, 2), ForceMode2D.Impulse);
+                }
+
+                // enemy is in the right side of the player
+                else if (transform.position.x > player.transform.position.x)
+                {
+                    player.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-3, 2), ForceMode2D.Impulse);
+                }
+            }
+
+            if (collision.gameObject.CompareTag("Trap"))
+            {
+                currentHealth = 0;
+            }
         }
     }
 }
