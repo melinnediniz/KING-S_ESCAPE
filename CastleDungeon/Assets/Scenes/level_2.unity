@@ -516,6 +516,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1068415494}
     m_Modifications:
+    - target: {fileID: 5016632228393065612, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016632228393065612, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1143696971}
+    - target: {fileID: 5016632228393065612, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
+      objectReference: {fileID: 0}
     - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -619,6 +631,26 @@ PrefabInstance:
     - target: {fileID: 6993470119046480809, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: level_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7980582644085954578, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7980582644085954578, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1143696971}
+    - target: {fileID: 7980582644085954578, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7980582644085954578, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Controllers.GameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7980582644085954578, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Menu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
