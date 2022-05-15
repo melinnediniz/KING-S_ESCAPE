@@ -160,5 +160,6 @@ MonoBehaviour:
   player: {fileID: 0}
   agroRange: 2
   speed: 2
-  maxHealth: 60
-  currentHealth: 60
+  maxHealth: 2
+  currentHealth: 2
+  attackDamage: 1

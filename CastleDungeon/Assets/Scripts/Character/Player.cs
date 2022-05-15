@@ -75,7 +75,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        // hit anim
+        Anim.SetTrigger("hit");
         currentHealth -= damage;
     }
 
@@ -100,7 +100,6 @@ public class Player : MonoBehaviour
             GameController.Instance.ShowGameOver();
             Destroy(gameObject);
         }
-        
     }
 
     public void DoorIn(){

@@ -16,6 +16,7 @@ public class Stalker : MonoBehaviour
     // life
     public float maxHealth;
     public float currentHealth;
+    private bool isAlive = true;
 
     // combat
     public int attackDamage;
@@ -44,6 +45,7 @@ public class Stalker : MonoBehaviour
 
     void Die()
     {
+        isAlive = false;
         StopChasing();
         anim.SetBool("dead", true);
         Destroy(gameObject, 1f);
@@ -51,9 +53,14 @@ public class Stalker : MonoBehaviour
 
     void CheckDistance()
     {
+        if (player == null)
+        {
+            return;
+        }
+
         float distToPlayer = Vector2.Distance(transform.position, player.position);
 
-        if (currentHealth > 0)
+        if (isAlive)
         {
             if (distToPlayer < agroRange)
             {
@@ -69,7 +76,7 @@ public class Stalker : MonoBehaviour
     }
 
     void ChasePlayer()
-    {  
+    {
         // enemy is in the left side of the player
         if (transform.position.x < player.position.x)
         {
@@ -94,6 +101,23 @@ public class Stalker : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             player.GetComponent<Player>().TakeDamage(attackDamage);
+
+            // enemy is in the left side of the player
+            if (transform.position.x < player.position.x)
+            {
+                player.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(3, 2), ForceMode2D.Impulse);
+            }
+
+            // enemy is in the right side of the player
+            else if (transform.position.x > player.position.x)
+            {
+                player.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-3, 2), ForceMode2D.Impulse);
+            }
+        }
+
+        if (collision.gameObject.tag == "Trap")
+        {
+            currentHealth = 0;
         }
     }
 }
