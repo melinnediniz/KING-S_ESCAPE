@@ -6,7 +6,9 @@ namespace Enemies
     public class FlyingEnemy : MonoBehaviour
     {
         private GameObject player;
+        private Rigidbody2D rig;
         public Transform startingPoint;
+        private Animator anim;
 
         public int currentHealth = 1;
         public int attackDamage;
@@ -18,6 +20,8 @@ namespace Enemies
         void Start()
         {
             player = GameObject.FindGameObjectWithTag("Player");
+            rig = GetComponent<Rigidbody2D>();
+            anim = GetComponent<Animator>();
         }
 
         // Update is called once per frame
@@ -72,7 +76,8 @@ namespace Enemies
 
         void Die()
         {
-            // die animation
+            anim.SetBool("dead", true);
+            rig.bodyType = RigidbodyType2D.Dynamic;
             isAlive = false;
             Destroy(gameObject, 1f);
         }
