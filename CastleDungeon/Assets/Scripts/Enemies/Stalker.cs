@@ -7,7 +7,7 @@ public class Stalker : MonoBehaviour
     // components variables
     private Rigidbody2D rig;
     private Animator anim;
-    public Transform player;
+    private GameObject player;
 
     // movement
     public float agroRange;
@@ -25,6 +25,8 @@ public class Stalker : MonoBehaviour
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
@@ -58,7 +60,7 @@ public class Stalker : MonoBehaviour
             return;
         }
 
-        float distToPlayer = Vector2.Distance(transform.position, player.position);
+        float distToPlayer = Vector2.Distance(transform.position, player.transform.position);
 
         if (isAlive)
         {
@@ -78,13 +80,13 @@ public class Stalker : MonoBehaviour
     void ChasePlayer()
     {
         // enemy is in the left side of the player
-        if (transform.position.x < player.position.x)
+        if (transform.position.x < player.transform.position.x)
         {
             rig.velocity = new Vector2(speed, 0f);
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
         }
         // enemy is in the right side of the player
-        else if (transform.position.x > player.position.x)
+        else if (transform.position.x > player.transform.position.x)
         {
             rig.velocity = new Vector2(-speed, 0f);
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
@@ -103,13 +105,13 @@ public class Stalker : MonoBehaviour
             player.GetComponent<Player>().TakeDamage(attackDamage);
 
             // enemy is in the left side of the player
-            if (transform.position.x < player.position.x)
+            if (transform.position.x < player.transform.position.x)
             {
                 player.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(3, 2), ForceMode2D.Impulse);
             }
 
             // enemy is in the right side of the player
-            else if (transform.position.x > player.position.x)
+            else if (transform.position.x > player.transform.position.x)
             {
                 player.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-3, 2), ForceMode2D.Impulse);
             }
