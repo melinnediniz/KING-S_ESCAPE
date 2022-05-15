@@ -561,7 +561,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &187036974 stripped
 GameObject:
@@ -9634,7 +9634,7 @@ Transform:
   - {fileID: 402701472}
   - {fileID: 728343614}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1721540726
 GameObject:
@@ -10203,7 +10203,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3373214898640686803, guid: 301d8aa0152f4b14b81bd3ad613d80c8, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3373214898640686803, guid: 301d8aa0152f4b14b81bd3ad613d80c8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10449,7 +10449,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1482234880679344586, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1482234880679344586, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10566,7 +10566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2809814611661616138, guid: be7e4d21e56afad49a9fad7b7debbb77, type: 3}
       propertyPath: enemyLayers.m_Bits
-      value: 320
+      value: 1344
       objectReference: {fileID: 0}
     - target: {fileID: 2809814611661616142, guid: be7e4d21e56afad49a9fad7b7debbb77, type: 3}
       propertyPath: m_EdgeRadius

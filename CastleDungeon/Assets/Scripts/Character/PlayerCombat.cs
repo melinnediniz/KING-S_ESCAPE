@@ -54,6 +54,11 @@ public class PlayerCombat : MonoBehaviour
                 }
             }
 
+            else if (enemy.gameObject.layer == 10)
+            {
+                enemy.gameObject.GetComponent<FlyingEnemy>().TakeDamage(attackDamage);
+            }
+
             // box(obstacle) collision
             else if (enemy.gameObject.tag == "Box")
             {
