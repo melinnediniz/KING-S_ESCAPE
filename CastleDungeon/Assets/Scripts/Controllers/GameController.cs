@@ -33,6 +33,7 @@ namespace Controllers
             Instance = this;
         }
 
+        // ReSharper disable Unity.PerformanceAnalysis
         public void ShowGameOver()
         {
             _timer.StopTimer();

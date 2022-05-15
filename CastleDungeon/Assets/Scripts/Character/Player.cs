@@ -1,3 +1,4 @@
+using System;
 using Controllers;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ namespace Character
         public float Speed;  //velocidade
         public float JumpForce;  //força do pulo
         public bool OnGround;  //player encostando no chão
-        private bool isAlive = true;
+        public bool isAlive = true;
         public int currentHealth;
         public Transform GroundDetect;  //verifica o chão
         public LayerMask IsGround;  //verifica o que é chão
@@ -16,7 +17,13 @@ namespace Character
 
         private Rigidbody2D Rig;  //colisor
         private BoxCollider2D BoxCol;
-        private Animator Anim;  //relações de animação
+        private Animator Anim;
+        private GameController _gameController;//relações de animação
+
+        private void Awake()
+        {
+            _gameController = GameObject.Find("Game Controller").GetComponent<GameController>();
+        }
 
         // Start is called before the first frame update
         void Start()
@@ -30,12 +37,26 @@ namespace Character
         void Update()
         {
             CheckLife();
-
+            
             if (isAlive)
             {
                 Move();
                 Jump();
             }
+        }
+        void CheckLife()
+        {
+            if (currentHealth <= 0)
+            {
+                isAlive = false;
+                // death test
+            }
+        }
+        
+        public void TakeDamage(int damage)
+        {
+            Anim.SetTrigger("hit");
+            currentHealth -= damage;
         }
 
         void Move()
@@ -64,47 +85,38 @@ namespace Character
             }
         }//end
 
-        void CheckLife()
-        {
-            if (currentHealth <= 0)
-            {
-                isAlive = false;
-                Debug.Log("Player is dead!"); // death test
-            }
-        }
-
-
-        public void TakeDamage(int damage)
-        {
-            Anim.SetTrigger("hit");
-            currentHealth -= damage;
-        }
 
         private void OnCollisionEnter2D(Collision2D col)
         {
             Anim.SetBool("jump", false);
 
-            if (col.gameObject.CompareTag("Spike"))
-            {
-                GameController.Instance.ShowGameOver();
-                Destroy(gameObject);
-            }
-
             if (col.gameObject.CompareTag("Trap"))
             {
-                GameController.Instance.ShowGameOver();
+                _gameController.ShowGameOver();
+                TakeDamage(3);
                 Destroy(gameObject);
             }
 
             if (col.gameObject.CompareTag("Saw"))
             {
-                GameController.Instance.ShowGameOver();
+                _gameController.ShowGameOver();
+                TakeDamage(3);
                 Destroy(gameObject);
             }
 
             if (col.gameObject.CompareTag("Bullet"))
             {
                 TakeDamage(1);
+            }
+        }
+
+        private void OnTriggerEnter2D(Collider2D col)
+        {
+            if (col.gameObject.CompareTag("Spike"))
+            {
+                _gameController.ShowGameOver();
+                TakeDamage(3);
+                Destroy(gameObject);
             }
         }
 

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Scenario
@@ -22,7 +23,7 @@ namespace Scenario
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, rayLenght, targetLayerMask);
 
-            if (hit.collider != null)
+            if (hit.collider)
             {
                 Fall();
             }
@@ -32,18 +33,14 @@ namespace Scenario
 
         void Fall()
         {
+            Debug.Log("Fall");
             rb2D.bodyType = RigidbodyType2D.Dynamic;
+            Destroy(gameObject, 4f);
         }
 
-        private void OnTriggerEnter2D(Collider2D col)
+        private void OnTriggerEnter(Collider other)
         {
-            if (col.gameObject.CompareTag("Player"))
-            {
-                Debug.Log("Player Killed");
-                Destroy(gameObject, 0.2f);
-            }
-
-            if (col.gameObject.layer == 6)
+            if (other.gameObject.CompareTag("Player"))
             {
                 Destroy(gameObject);
             }

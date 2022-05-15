@@ -242,7 +242,7 @@ Transform:
   - {fileID: 2124837611}
   - {fileID: 281602228}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &16854550 stripped
 Transform:
@@ -1332,7 +1332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6826366361041916462, guid: b893a2d8dd6811b40b0402bfd4f93611, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6826366361041916462, guid: b893a2d8dd6811b40b0402bfd4f93611, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2337,6 +2337,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 512962758}
     - target: {fileID: 3394340522273727432, guid: f9c5a14804eeb3b41b4c454be950f6b9, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 734861815}
+    - target: {fileID: 3394340522273727432, guid: f9c5a14804eeb3b41b4c454be950f6b9, type: 3}
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 512962759}
@@ -2395,6 +2399,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3394340522273727435, guid: f9c5a14804eeb3b41b4c454be950f6b9, type: 3}
   m_PrefabInstance: {fileID: 501946131}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &501946133 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3394340522273727432, guid: f9c5a14804eeb3b41b4c454be950f6b9, type: 3}
+  m_PrefabInstance: {fileID: 501946131}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7689f65fa8716645ab78780ab7a51e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &512962756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2402,9 +2417,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1302589418}
     m_Modifications:
+    - target: {fileID: 8414961376195765916, guid: aadf7ceb6ed325d4ca758a7474b1d3d5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 501946133}
+    - target: {fileID: 8414961376195765916, guid: aadf7ceb6ed325d4ca758a7474b1d3d5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
+    - target: {fileID: 8414961376195765916, guid: aadf7ceb6ed325d4ca758a7474b1d3d5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Dialogue.DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8414961376535558192, guid: aadf7ceb6ed325d4ca758a7474b1d3d5, type: 3}
       propertyPath: m_Name
       value: DialogueBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 8414961376535558192, guid: aadf7ceb6ed325d4ca758a7474b1d3d5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8414961376535558193, guid: aadf7ceb6ed325d4ca758a7474b1d3d5, type: 3}
       propertyPath: m_Pivot.x
@@ -2476,7 +2507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8414961376535558193, guid: aadf7ceb6ed325d4ca758a7474b1d3d5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 285
+      value: 168
       objectReference: {fileID: 0}
     - target: {fileID: 8414961376535558193, guid: aadf7ceb6ed325d4ca758a7474b1d3d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6927,6 +6958,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
+--- !u!1 &734861815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8414961376535558192, guid: aadf7ceb6ed325d4ca758a7474b1d3d5, type: 3}
+  m_PrefabInstance: {fileID: 512962756}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &740550058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7203,7 +7239,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 183011640857075568, guid: 6ed8f6040847c61428de56676ea70f99, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 183011640857075568, guid: 6ed8f6040847c61428de56676ea70f99, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7814,6 +7850,10 @@ PrefabInstance:
     - target: {fileID: 2929902930685442653, guid: b3762c692f3a30a4aa31a9e40726fe42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929902930685442653, guid: b3762c692f3a30a4aa31a9e40726fe42, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Controllers.GameController, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3762c692f3a30a4aa31a9e40726fe42, type: 3}
@@ -13624,7 +13664,7 @@ RectTransform:
   - {fileID: 370835663}
   - {fileID: 920587563}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -13645,7 +13685,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1482234880679344586, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1482234880679344586, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14044,7 +14084,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6597874362865010585, guid: 12194e1a2c8cb134ca22d8d30d9e9586, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6597874362865010585, guid: 12194e1a2c8cb134ca22d8d30d9e9586, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15097,7 +15137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8339452450373474892, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.42
+      value: 2.59
       objectReference: {fileID: 0}
     - target: {fileID: 8339452450373474892, guid: 0e1a296c6bca4fc45bebe429c635770d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15375,12 +15415,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 800632540}
     - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RestartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Controllers.GameController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -17727,8 +17775,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 281602229}
     - target: {fileID: 1088436159478669998, guid: 814d6321a823fc34884dd2815768320f, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 734861815}
+    - target: {fileID: 1088436159478669998, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: dialogue.title
-      value: Tutorial
+      value: Trampolins
       objectReference: {fileID: 0}
     - target: {fileID: 1088436159478669998, guid: 814d6321a823fc34884dd2815768320f, type: 3}
       propertyPath: dialogue.phrases.Array.size
