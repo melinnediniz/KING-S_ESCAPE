@@ -43,7 +43,7 @@ public class PlayerCombat : MonoBehaviour
             // box(obstacle) collision
             else if (enemy.gameObject.tag == "Box")
             {
-                Destroy(enemy);
+                Destroy(enemy.gameObject);
             }
         }
     }

@@ -100,7 +100,6 @@ public class Player : MonoBehaviour
             GameController.Instance.ShowGameOver();
             Destroy(gameObject);
         }
-        
     }
 
     public void DoorIn(){
