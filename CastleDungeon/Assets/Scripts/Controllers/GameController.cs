@@ -13,6 +13,7 @@ namespace Controllers
         public GameObject restartButton;
         public GameObject pauseButton;
         public bool isPaused;
+        public GameObject dialogue;
         
         private TimerManager _timer;
         private string _scene;
@@ -29,7 +30,6 @@ namespace Controllers
         {
             _timer.StartTimer();
             _saveGame.SaveScene(_scene);
-            Debug.Log("Scene: " + SaveGame.instance.LoadScene());
             Instance = this;
         }
 
@@ -50,6 +50,7 @@ namespace Controllers
             Pause();
             SceneManager.LoadScene(scene);
         }
+        
 
         public void Pause()
         {
@@ -62,6 +63,7 @@ namespace Controllers
         {
             if(isPaused)
             {
+                dialogue.SetActive(false);
                 Time.timeScale = 0f;
                 AudioListener.pause = true;
                 pause.SetActive(true);
@@ -70,6 +72,7 @@ namespace Controllers
             }
             else 
             {
+                dialogue.SetActive(true);
                 Time.timeScale = 1;
                 AudioListener.pause = false;
                 pause.SetActive(false);

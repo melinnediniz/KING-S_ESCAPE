@@ -1,3 +1,5 @@
+using System;
+using Character;
 using UnityEngine;
 
 namespace Scenario
@@ -7,15 +9,17 @@ namespace Scenario
 
         [SerializeField] private float speed;
         private float _vertical;
-        [SerializeField] private Animator animPlayer;
+        private bool  _isUnder;
+        
+        private Rigidbody2D _rb2DPlayer;
+        private Animator _playerAnim;
 
-        [SerializeField]
-        private bool  isUnder;
-    
+        private void Awake()
+        {
+            _playerAnim = GameObject.Find("Player").GetComponent<Animator>();
+            _rb2DPlayer = GameObject.Find("Player").GetComponent<Rigidbody2D>();
+        }
 
-        public Rigidbody2D rb2DPlayer;
-        public Animator playerAnim;
-    
         void Start()
         {
             speed = 5f;
@@ -29,7 +33,7 @@ namespace Scenario
 
         private void FixedUpdate()
         {
-            if (rb2DPlayer)
+            if (_rb2DPlayer)
             {
                 Climb();
             }
@@ -38,9 +42,9 @@ namespace Scenario
 
         private void Climb()
         {
-            if (isUnder)
+            if (_isUnder)
             {
-                rb2DPlayer.velocity = new Vector2(rb2DPlayer.velocity.x, _vertical * speed);
+                _rb2DPlayer.velocity = new Vector2(_rb2DPlayer.velocity.x, _vertical * speed);
             }
 
         }
@@ -50,9 +54,9 @@ namespace Scenario
         {
             if (col.gameObject.CompareTag("Player"))
             {
-                rb2DPlayer.gravityScale = 0f;
-                animPlayer.SetBool("climbing", true);
-                isUnder = true;
+                _rb2DPlayer.gravityScale = 0f;
+                _playerAnim.SetBool("climbing", true);
+                _isUnder = true;
             }
         
         
@@ -62,13 +66,11 @@ namespace Scenario
         {
             if (col.gameObject.CompareTag("Player"))
             {
-                animPlayer.SetBool("climbing", false);
-                isUnder = false; 
-                rb2DPlayer.gravityScale = 2f;
+                _playerAnim.SetBool("climbing", false);
+                _isUnder = false; 
+                _rb2DPlayer.gravityScale = 2f;
 
             }
         }
-
-
     }
 }
