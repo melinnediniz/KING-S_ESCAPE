@@ -10527,6 +10527,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 402355959}
     m_Modifications:
+    - target: {fileID: 570579978, guid: 0a4612f69fff784499b4aa1e1602c34c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1420900432}
+    - target: {fileID: 570579978, guid: 0a4612f69fff784499b4aa1e1602c34c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pause
+      objectReference: {fileID: 0}
     - target: {fileID: 6102708428277266676, guid: 0a4612f69fff784499b4aa1e1602c34c, type: 3}
       propertyPath: m_Name
       value: PausePanel

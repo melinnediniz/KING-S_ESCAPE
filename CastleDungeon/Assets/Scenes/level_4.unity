@@ -925,6 +925,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3774095893584171762, guid: 2d4907b721cbf014891ab75fef743216, type: 3}
   m_PrefabInstance: {fileID: 389581328}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &142775979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2929902930685442651, guid: b3762c692f3a30a4aa31a9e40726fe42, type: 3}
+  m_PrefabInstance: {fileID: 284457285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &144768127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10154,6 +10159,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6993470118390865295, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
   m_PrefabInstance: {fileID: 1735786438}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &681912867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7872265176161949562, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+  m_PrefabInstance: {fileID: 1143142239}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &684072169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19274,6 +19284,14 @@ PrefabInstance:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 657291382}
+    - target: {fileID: 1482234880679344587, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 142775979}
+    - target: {fileID: 1482234880679344587, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: restartButton
+      value: 
+      objectReference: {fileID: 681912867}
     - target: {fileID: 1482234880679344596, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
       propertyPath: m_Name
       value: Game Controller
@@ -19575,9 +19593,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1662240829}
     m_Modifications:
+    - target: {fileID: 570579978, guid: 0a4612f69fff784499b4aa1e1602c34c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1974939760}
+    - target: {fileID: 570579978, guid: 0a4612f69fff784499b4aa1e1602c34c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pause
+      objectReference: {fileID: 0}
     - target: {fileID: 6102708428277266676, guid: 0a4612f69fff784499b4aa1e1602c34c, type: 3}
       propertyPath: m_Name
       value: PausePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6102708428277266676, guid: 0a4612f69fff784499b4aa1e1602c34c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6102708428277266677, guid: 0a4612f69fff784499b4aa1e1602c34c, type: 3}
       propertyPath: m_Pivot.x

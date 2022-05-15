@@ -1334,6 +1334,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edad6bc79c6093e4cb62fed136d824b5, type: 3}
+--- !u!1 &224920226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7872265176161949562, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+  m_PrefabInstance: {fileID: 1419620560}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &225659943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13345,6 +13350,14 @@ PrefabInstance:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 370835660}
+    - target: {fileID: 1482234880679344587, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 1970332502}
+    - target: {fileID: 1482234880679344587, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
+      propertyPath: restartButton
+      value: 
+      objectReference: {fileID: 224920226}
     - target: {fileID: 1482234880679344596, guid: df823c1163766cc4ebc27bdf03a0ab67, type: 3}
       propertyPath: m_Name
       value: Game Controller
@@ -13998,6 +14011,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1302589418}
     m_Modifications:
+    - target: {fileID: 570579978, guid: 0a4612f69fff784499b4aa1e1602c34c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 800632540}
     - target: {fileID: 6102708428277266676, guid: 0a4612f69fff784499b4aa1e1602c34c, type: 3}
       propertyPath: m_Name
       value: PausePanel
@@ -16366,6 +16383,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edad6bc79c6093e4cb62fed136d824b5, type: 3}
+--- !u!1 &1970332502 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2929902930685442651, guid: b3762c692f3a30a4aa31a9e40726fe42, type: 3}
+  m_PrefabInstance: {fileID: 2063468046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1981953925
 PrefabInstance:
   m_ObjectHideFlags: 0
