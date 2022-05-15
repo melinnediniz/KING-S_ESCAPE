@@ -100,6 +100,11 @@ public class Player : MonoBehaviour
             GameController.Instance.ShowGameOver();
             Destroy(gameObject);
         }
+
+        if (col.gameObject.CompareTag("Bullet"))
+        {
+            TakeDamage(1);
+        }
     }
 
     public void DoorIn(){
