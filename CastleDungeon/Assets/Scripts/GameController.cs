@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour
     public static GameController Instance;
     public GameObject gameOver;
     public GameObject pause;
+    public GameObject restartButton;
+    public GameObject pauseButton;
     public bool isPaused;
  
     void Start()
@@ -44,12 +46,15 @@ public class GameController : MonoBehaviour
             Time.timeScale = 0f;
             AudioListener.pause = true;
             pause.SetActive(true);
+            restartButton.SetActive(false);
+            pauseButton.SetActive(true);
         }
         else 
         {
             Time.timeScale = 1;
             AudioListener.pause = false;
             pause.SetActive(false);
+            restartButton.SetActive(true);
         }
     }
 
