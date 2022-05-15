@@ -41,11 +41,12 @@ namespace Controllers
 
         public void RestartGame()
         {
-            SceneManager.LoadScene(SaveGame.instance.LoadScene());
+            SceneManager.LoadScene(_saveGame.LoadScene());
         }
 
         public void LoadScene(string scene)
         {
+            Pause();
             SceneManager.LoadScene(scene);
         }
 

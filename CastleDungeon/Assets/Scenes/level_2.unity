@@ -8793,11 +8793,11 @@ PrefabInstance:
       objectReference: {fileID: 1143696971}
     - target: {fileID: 7054676636158670545, guid: 0a4612f69fff784499b4aa1e1602c34c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartGame
+      value: LoadScene
       objectReference: {fileID: 0}
     - target: {fileID: 7054676636158670545, guid: 0a4612f69fff784499b4aa1e1602c34c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameController, Assembly-CSharp
+      value: Controllers.GameController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7054676636158670545, guid: 0a4612f69fff784499b4aa1e1602c34c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument

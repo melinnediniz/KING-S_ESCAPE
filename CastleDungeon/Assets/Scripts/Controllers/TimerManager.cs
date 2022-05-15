@@ -11,6 +11,7 @@ namespace Controllers
         public static TimerManager Instance;
 
         private float _currentTime;
+        private SaveGame _saveGame;
 
         [SerializeField] public float initialTime;
 
@@ -20,7 +21,8 @@ namespace Controllers
         void Start()
         {
             Instance = this;
-            initialTime = SaveGame.instance.LoadTime();
+            _saveGame = GameObject.Find("SaveGame").GetComponent<SaveGame>();
+            initialTime = _saveGame.LoadTime();
             _currentTime = initialTime;
         }
 
@@ -35,12 +37,12 @@ namespace Controllers
             if (_timer)
             {
                 _currentTime += Time.deltaTime;
-                SaveGame.instance.lastTime = _currentTime;
+                _saveGame.lastTime = _currentTime;
             }
 
             TimeSpan time = TimeSpan.FromSeconds(_currentTime);
             timerText.text = time.ToString(@"hh\:mm\:ss");
-            SaveGame.instance.SaveTime();
+            _saveGame.SaveTime();
             
         }
 
