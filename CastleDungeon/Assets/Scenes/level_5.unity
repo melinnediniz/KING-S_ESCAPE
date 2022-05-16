@@ -16251,11 +16251,7 @@ Transform:
   - {fileID: 1405253839}
   - {fileID: 17705864}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 20
-=======
   m_RootOrder: 21
->>>>>>> 1b18f42903e28389c14da2cdd7b97ad4f486bbcf
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1335150143
 GameObject:
