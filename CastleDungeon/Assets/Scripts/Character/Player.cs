@@ -82,9 +82,9 @@ namespace Character
             if(Input.GetButtonDown("Jump") && OnGround == true){  //se botão de pulo acionado e player não pulando
                 Rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);  //adiciona força/impulso na direção Cima
                 Anim.SetBool("jump", true);
+                FindObjectOfType<AudioManager>().Play("Jump");
             }
         }//end
-
 
         private void OnCollisionEnter2D(Collision2D col)
         {

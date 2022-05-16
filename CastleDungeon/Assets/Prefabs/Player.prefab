@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 2809814611661616139}
   - component: {fileID: 2809814611661616138}
   - component: {fileID: 4449425079703059957}
+  - component: {fileID: 3594119376201890021}
+  - component: {fileID: 1141263871791723823}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -147,6 +149,7 @@ MonoBehaviour:
   Speed: 5
   JumpForce: 6
   OnGround: 0
+  isAlive: 1
   currentHealth: 3
   GroundDetect: {fileID: 2809814612867571815}
   IsGround:
@@ -196,6 +199,47 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5221329, y: 0.80060816}
   m_EdgeRadius: 0
+--- !u!81 &3594119376201890021
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2809814611661616137}
+  m_Enabled: 1
+--- !u!114 &1141263871791723823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2809814611661616137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46be1533d82ba5a46820955a1e209c9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Attack
+    clip: {fileID: 8300000, guid: e1f8de9c968ad604aaabef280386f8fb, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 9a8d49131e305c14f94afb5da251e4a2, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Walk
+    clip: {fileID: 8300000, guid: 6fb19711d1954a84da845a5d20364d2c, type: 3}
+    volume: 0.2
+    pitch: 1
+    source: {fileID: 0}
+  - name: NextLevel
+    clip: {fileID: 8300000, guid: 7f274e3fe76e003409aaf79cafd0c065, type: 3}
+    volume: 0.2
+    pitch: 1
+    source: {fileID: 0}
 --- !u!1 &2809814611767877150
 GameObject:
   m_ObjectHideFlags: 0
