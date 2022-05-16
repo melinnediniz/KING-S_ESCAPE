@@ -104,18 +104,21 @@ namespace Enemies
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                player.GetComponent<Player>().TakeDamage(attackDamage);
-
-                // enemy is in the left side of the player
-                if (transform.position.x < player.transform.position.x)
+                if (isAlive)
                 {
-                    player.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(3, 2), ForceMode2D.Impulse);
-                }
+                    player.GetComponent<Player>().TakeDamage(attackDamage);
 
-                // enemy is in the right side of the player
-                else if (transform.position.x > player.transform.position.x)
-                {
-                    player.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-3, 2), ForceMode2D.Impulse);
+                    // enemy is in the left side of the player
+                    if (transform.position.x < player.transform.position.x)
+                    {
+                        player.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(3, 2), ForceMode2D.Impulse);
+                    }
+
+                    // enemy is in the right side of the player
+                    else if (transform.position.x > player.transform.position.x)
+                    {
+                        player.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-3, 2), ForceMode2D.Impulse);
+                    }
                 }
             }
 
