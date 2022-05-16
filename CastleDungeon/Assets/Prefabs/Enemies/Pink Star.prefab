@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2341409684646709418}
   - component: {fileID: 2341409684646709419}
   - component: {fileID: 2341409684646709416}
+  - component: {fileID: -3993277848297249336}
   m_Layer: 8
   m_Name: Pink Star
   m_TagString: Untagged
@@ -137,7 +138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9161aee66005484891c1e630f4b935e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   agroRange: 2
   speed: 2
   maxHealth: 2
@@ -163,3 +163,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-3993277848297249336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2341409684646709417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46be1533d82ba5a46820955a1e209c9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Hit
+    clip: {fileID: 8300000, guid: 8b7f6b72609cb4b47ba17139fd651a62, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Kill
+    clip: {fileID: 8300000, guid: d28776392b73fad438a1b4c9fa46808b, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
