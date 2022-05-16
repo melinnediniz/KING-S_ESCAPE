@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Controllers;
 using UnityEngine;
 
@@ -8,9 +9,14 @@ namespace Character
     {
         public float Speed;  //velocidade
         public float JumpForce;  //força do pulo
-        public bool OnGround;  //player encostando no chão
+        public bool OnGround; 
+        
+        [Header("Life")]
         public bool isAlive = true;
-        public int currentHealth;
+        private int currentHealth;
+        public int health;
+        private HealthBar _healthBar;
+        
         public Transform GroundDetect;  //verifica o chão
         public LayerMask IsGround;  //verifica o que é chão
         public static Player instance;
@@ -22,12 +28,15 @@ namespace Character
 
         private void Awake()
         {
+            _healthBar = GameObject.Find("HealthBar").GetComponent<HealthBar>();
             _gameController = GameObject.Find("Game Controller").GetComponent<GameController>();
         }
 
         // Start is called before the first frame update
         void Start()
         {
+            currentHealth = health;
+            _healthBar.SetMaxHealth(health);
             Rig = GetComponent<Rigidbody2D>();  //pega o rigid body
             Anim = GetComponent<Animator>();  //pega as relações de animação
             instance = this;
@@ -49,7 +58,8 @@ namespace Character
             if (currentHealth <= 0)
             {
                 isAlive = false;
-                // death test
+                Anim.SetTrigger("die");
+                StartCoroutine(Die());
             }
         }
         
@@ -57,6 +67,14 @@ namespace Character
         {
             Anim.SetTrigger("hit");
             currentHealth -= damage;
+            _healthBar.SetHealth(currentHealth);
+        }
+
+        private IEnumerator Die()
+        {
+            yield return new WaitForSeconds(0.75f);
+            _gameController.ShowGameOver();
+            Destroy(gameObject);
         }
 
         void Move()
@@ -92,16 +110,12 @@ namespace Character
 
             if (col.gameObject.CompareTag("Trap"))
             {
-                _gameController.ShowGameOver();
                 TakeDamage(3);
-                Destroy(gameObject);
             }
 
             if (col.gameObject.CompareTag("Saw"))
             {
-                _gameController.ShowGameOver();
                 TakeDamage(3);
-                Destroy(gameObject);
             }
 
             if (col.gameObject.CompareTag("Bullet"))
@@ -114,9 +128,7 @@ namespace Character
         {
             if (col.gameObject.CompareTag("Spike"))
             {
-                _gameController.ShowGameOver();
                 TakeDamage(3);
-                Destroy(gameObject);
             }
         }
 

@@ -150,7 +150,7 @@ MonoBehaviour:
   JumpForce: 6
   OnGround: 0
   isAlive: 1
-  currentHealth: 3
+  health: 3
   GroundDetect: {fileID: 2809814612867571815}
   IsGround:
     serializedVersion: 2
