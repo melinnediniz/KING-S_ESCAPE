@@ -37,5 +37,10 @@ namespace Controllers
         {
             return PlayerPrefs.GetString("Scene");
         }
+
+        public void ClearHistory()
+        {
+            PlayerPrefs.DeleteAll();
+        }
     }
 }

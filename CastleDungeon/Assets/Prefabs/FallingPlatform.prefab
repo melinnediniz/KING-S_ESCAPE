@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingTime: 1
-  destroyTime: 0
+  destroyTime: 2
 --- !u!95 &2503149640334085606
 Animator:
   serializedVersion: 4
