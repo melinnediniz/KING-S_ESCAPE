@@ -9606,7 +9606,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.70328236, y: 0.8730402}
@@ -11043,6 +11043,10 @@ PrefabInstance:
     - target: {fileID: 5171576232340743965, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.000024795532
+      objectReference: {fileID: 0}
+    - target: {fileID: 5415004469312527334, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
+      propertyPath: m_Text
+      value: POXA, VOCE MORREU! DESEJA REVIVER?
       objectReference: {fileID: 0}
     - target: {fileID: 6993470118390865294, guid: 2c174ca6b0eb8ba40a784ed1ddfd9928, type: 3}
       propertyPath: m_Pivot.x

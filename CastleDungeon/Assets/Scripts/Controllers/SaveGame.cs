@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.Design.Serialization;
+using Character;
 using UnityEngine;
 using UnityEngine.Serialization;
 

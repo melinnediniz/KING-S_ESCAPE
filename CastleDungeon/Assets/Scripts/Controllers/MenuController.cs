@@ -45,7 +45,7 @@ namespace Controllers
         public void NewGame()
         {
             saveGame.ClearHistory();
-            SceneManager.LoadScene("level_1");
+            SceneManager.LoadScene("Cutscene");
         }
 
         public void ShowNewGamePanel()

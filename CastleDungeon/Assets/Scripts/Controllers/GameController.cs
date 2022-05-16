@@ -18,6 +18,7 @@ namespace Controllers
         private TimerManager _timer;
         private string _scene;
         private SaveGame _saveGame;
+        public int deathCount;
 
         private void Awake()
         {

@@ -60,6 +60,7 @@ namespace Character
                 isAlive = false;
                 Anim.SetTrigger("die");
                 StartCoroutine(Die());
+                _gameController.deathCount += 1;
             }
         }
         
