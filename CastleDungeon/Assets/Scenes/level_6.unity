@@ -11036,6 +11036,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2987503823286300620, guid: ea5c3d61aee8c08479b865ef5f54fd55, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2987503823357016742, guid: ea5c3d61aee8c08479b865ef5f54fd55, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -11271,12 +11275,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 800632540}
     - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RestartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Controllers.GameController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument

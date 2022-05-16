@@ -17617,12 +17617,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 800632540}
     - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RestartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Controllers.GameController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7872265176161949564, guid: b7529c03bd3b45a4c9622054c802cc4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument

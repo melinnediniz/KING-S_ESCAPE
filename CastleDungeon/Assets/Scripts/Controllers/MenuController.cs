@@ -21,7 +21,7 @@ namespace Controllers
 
         public void Start()
         {
-            GameController.Instance.isPaused = false;
+            Time.timeScale = 1f;
             if (PlayerPrefs.GetFloat("Timer") == 0f)
             {
                 loadGameButton.SetActive(false);
