@@ -48,6 +48,7 @@ namespace Enemies
 
         void Die()
         {
+            attackDamage = 0;
             isAlive = false;
             StopChasing();
             anim.SetBool("dead", true);
@@ -116,6 +117,11 @@ namespace Enemies
                 {
                     player.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-3, 2), ForceMode2D.Impulse);
                 }
+            }
+
+            if (collision.gameObject.CompareTag("Trap"))
+            {
+                Die();
             }
 
             if (collision.gameObject.CompareTag("Trap"))
