@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3476615587955627290}
   - component: {fileID: 3476615587955627292}
   - component: {fileID: 3476615587955627293}
+  - component: {fileID: 8231327953505731345}
   m_Layer: 0
   m_Name: Trampoline
   m_TagString: Untagged
@@ -147,3 +148,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.65654564, y: 0.13491821}
   m_EdgeRadius: 0.01
+--- !u!114 &8231327953505731345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3476615587955627289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46be1533d82ba5a46820955a1e209c9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Boing
+    clip: {fileID: 8300000, guid: 6e6b515d827cbe2459f3e7e9d6f9510a, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
