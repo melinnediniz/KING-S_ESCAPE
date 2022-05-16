@@ -86,7 +86,10 @@ namespace Enemies
         {
             if (collision.gameObject.tag == "Player")
             {
-                collision.gameObject.GetComponent<Player>().TakeDamage(attackDamage);
+                if(isAlive)
+                {
+                    collision.gameObject.GetComponent<Player>().TakeDamage(attackDamage);
+                }
             }
         }
     }
