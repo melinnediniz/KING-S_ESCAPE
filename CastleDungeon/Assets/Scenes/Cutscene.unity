@@ -369,8 +369,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -549,26 +549,30 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 5811541229520716385, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
-    value: {fileID: 2057319217}
-  - key: {fileID: 9048213788401954838, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
-    value: {fileID: 1681762609}
-  - key: {fileID: 2479198485783571846, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
-    value: {fileID: 1394702961}
   - key: {fileID: 8400822309805153809, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
     value: {fileID: 833190704}
-  - key: {fileID: -5636900571269373119, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
-    value: {fileID: 762159377}
   - key: {fileID: -2728923245559040265, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
     value: {fileID: 282406787}
   - key: {fileID: 2033562104931996529, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
     value: {fileID: 216740950}
   - key: {fileID: -5211728730345914900, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
     value: {fileID: 1600755336}
-  - key: {fileID: 4878655218420633535, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -7532548695086737799, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
-    value: {fileID: 0}
+  - key: {fileID: 8691676607341278340, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
+    value: {fileID: 2057319217}
+  - key: {fileID: 8940475117900113440, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
+    value: {fileID: 1681762609}
+  - key: {fileID: -1789386898949792630, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
+    value: {fileID: 1394702961}
+  - key: {fileID: -6995876377274346883, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
+    value: {fileID: 762159377}
+  - key: {fileID: 3623085819428562008, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
+    value: {fileID: 833190704}
+  - key: {fileID: 4067622937743608867, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
+    value: {fileID: 282406787}
+  - key: {fileID: 8381244807994179941, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
+    value: {fileID: 216740950}
+  - key: {fileID: -6518038968460479191, guid: 0a174e30dc1fa2b4d9fc3d4c2e892e7c, type: 2}
+    value: {fileID: 1600755336}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &739272403
@@ -1676,9 +1680,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776099230}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.000030517578, y: 0.000015258789, z: 0}
+  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
