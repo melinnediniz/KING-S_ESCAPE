@@ -5,8 +5,8 @@ LPC - Atividade 012: Trabalho Final
 Professor: Jucimar Maia da Silva Junior
 
 Equipe formada por:
-  Gabriel da Silva Lima - 2115310010
-  Gabriel dos Santos Lima - 2115310009
+  Gabriel da Silva Lima - 2115310009
+  Gabriel dos Santos Lima - 2115310010
   Melinne Diniz de Oliveira - 2115310021
   Níckolas Javier Santos Livero - 2115310042
   Tiago Farias Barbosa - 2115310025
